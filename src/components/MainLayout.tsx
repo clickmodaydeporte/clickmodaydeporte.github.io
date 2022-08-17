@@ -8,7 +8,7 @@ interface Props {
   children: React.ReactNode;
 }
 
-const Layout: React.FC<Props> = ({ children }) => {
+const MainLayout: React.FC<Props> = ({ children }) => {
   return (
     <div
       style={{
@@ -27,7 +27,6 @@ const Layout: React.FC<Props> = ({ children }) => {
       </Head>
 
       <MainHeader />
-
       {children}
 
       <MainFooter />
@@ -35,4 +34,4 @@ const Layout: React.FC<Props> = ({ children }) => {
   );
 };
 
-export default Layout;
+export default MainLayout;
