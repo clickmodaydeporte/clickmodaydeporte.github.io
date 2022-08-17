@@ -1,7 +1,6 @@
 import React from "react";
 import Head from "next/head";
-import Image from "next/image";
-import MainHeader from "./header/MainHeader";
+import MainHeader from "./home/MainHeader";
 import MainFooter from "./footer/MainFooter";
 
 interface Props {
