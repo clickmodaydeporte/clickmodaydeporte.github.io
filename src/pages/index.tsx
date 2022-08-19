@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import SliderSection from "../components/header/SliderSection";
+import SliderSection from "../components/home/SliderSection";
 import BannerSection from "../components/home/BannerSection";
 import FeaturesSection from "../components/home/FeaturesSection";
 import ProductsSection from "../components/home/ProductsSection";

@@ -7,21 +7,21 @@ const BannerSection: React.FC = () => {
         <div className="row">
           <div className="col-lg-6 col-md-12">
             <div className="banner-2 pos-relative mb-30">
-              <a href="http://themepure.net/template/vue/vue/shop.html">
+              <a href="">
                 <img
-                  src="./Vue - Clean Minimal eCommerce HTML Template_files/banner1.jpg"
+                  src="/images/corpofit-banner-1.jpg"
                   alt=""
                 />
               </a>
               <div className="banner-trend">
                 <span>Trendy Item</span>
                 <h2>
-                  <a href="http://themepure.net/template/vue/vue/shop.html">
+                  <a href="">
                     New Year Trend Coming 2019
                   </a>
                 </h2>
                 <div className="discover-link">
-                  <a href="http://themepure.net/template/vue/vue/shop.html">
+                  <a href="">
                     discover
                   </a>
                 </div>
@@ -30,9 +30,9 @@ const BannerSection: React.FC = () => {
           </div>
           <div className="col-lg-6 col-md-12">
             <div className="banner-2 pos-relative mb-30">
-              <a href="http://themepure.net/template/vue/vue/shop.html">
+              <a href="">
                 <img
-                  src="./Vue - Clean Minimal eCommerce HTML Template_files/banner2.jpg"
+                  src="/images/corpofit-banner-2.jpg"
                   alt=""
                 />
               </a>
@@ -45,7 +45,7 @@ const BannerSection: React.FC = () => {
                 />
                 <p>Your delivery of outfit ideas, updated daily</p>
                 <a
-                  href="http://themepure.net/template/vue/vue/shop.html"
+                  href=""
                   className="btn theme-btn">
                   discover
                 </a>
