@@ -16,6 +16,7 @@ const SliderSection: React.FC = () => {
         <div className="item">
           <img
             src="/images/click-banner-1.jpg"
+            // src="https://via.placeholder.com/1600x800"
             className="img-responsive"
             alt=""
           />
