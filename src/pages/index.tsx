@@ -16,7 +16,9 @@ const Home: NextPage = () => {
       </Head>
 
       <main>
-        <SliderSection />
+        <section className="section-slider height-v">
+          <SliderSection />
+        </section>
 
         <BannerSection />
 

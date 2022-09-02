@@ -3,7 +3,7 @@ import { Carousel } from "react-responsive-carousel";
 
 const SliderSection: React.FC = () => {
   return (
-    <section className="slider-area pos-relative">
+    <div className="slider-area pos-relative">
       <Carousel
         showArrows={true}
         showThumbs={false}
@@ -29,7 +29,7 @@ const SliderSection: React.FC = () => {
           />
         </div>
       </Carousel>
-    </section>
+    </div>
   );
 };
 
