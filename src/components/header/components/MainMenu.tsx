@@ -4,7 +4,7 @@ import React from "react";
 const MainMenu: React.FC = () => {
   return (
     <div className="main-menu">
-      <nav id="mobile-menu" style={{ display: "block" }}>
+      <nav id="menu" style={{ display: "block" }}>
         <ul>
           <li>
             <Link href="/">

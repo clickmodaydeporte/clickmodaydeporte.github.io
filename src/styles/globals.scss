@@ -8277,6 +8277,18 @@ img.mfp-img {
   & > li {
     height: 120px;
   }
+
+  & #menu {
+    & > ul {
+      display: flex;
+      align-items: center;
+      height: 100px;
+
+      & li {
+        padding: 0;
+      }
+    }
+  }
 }
 
 .header-right {
