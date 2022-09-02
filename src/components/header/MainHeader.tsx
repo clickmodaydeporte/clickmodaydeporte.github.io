@@ -12,10 +12,10 @@ const MainHeader: React.FC = () => {
             <div className="col-xl-2 col-lg-6 col-md-6 col-7 col-sm-3 d-flex align-items-center">
               <LogoDesktop logo="/images/Click-logo.png"/>
             </div>
-            <div className="col-xl-7 col-lg-6 col-md-8 col-8 d-none d-xl-block">
+            <div className="col-xl-9 col-lg-8 col-md-10 col-10 d-none d-xl-block header-menu_wrapper">
               <MainMenu />
             </div>
-            <div className="col-xl-3 col-lg-6 col-md-6 col-5 col-sm-9 pl-0">
+            <div className="col-xl-1 col-lg-4 col-md-4 col-3 col-sm-7 pl-0">
               <div className="header-right f-right">
                 <ul>
                   <li className="d-shop-cart">

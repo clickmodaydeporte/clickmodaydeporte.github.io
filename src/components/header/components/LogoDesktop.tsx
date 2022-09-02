@@ -12,7 +12,7 @@ const LogoDesktop: React.FC<LogoDesktopProps> = ({ logo }) => {
       <Link href="/">
         <a>
           <Image
-            width={130}
+            width={150}
             height={70}
             src={logo}
             alt="Logo del sitio de Click"

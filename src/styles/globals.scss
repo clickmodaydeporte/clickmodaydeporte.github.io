@@ -1422,10 +1422,6 @@ a.meanmenu-reveal {
     padding-right: 30px;
   }
 
-  .header-right {
-    margin-right: 85px;
-  }
-
   .header-right-3 {
     margin-right: 0;
   }
@@ -2747,7 +2743,7 @@ label {
         font-size: 14px;
         line-height: 1;
         font-weight: 500;
-        padding: 60px 0;
+        padding: 54px 0;
         display: inline-block;
         text-transform: uppercase;
       }
@@ -2899,7 +2895,7 @@ label {
 
               & li {
                 & a {
-                  font-size: 13px;
+                  font-size: 14px;
                   text-transform: capitalize;
                   font-weight: 400;
                   padding: 13px 0;
@@ -8261,10 +8257,47 @@ img.mfp-img {
 ---------------------------------------------------------
 --------------------------------------------------------- */
 
+// header
+
+.header-menu_wrapper {
+  height: 100px;
+}
+
+.main-menu {
+  & > li {
+    height: 120px;
+  }
+}
+
+.header-right {
+  & > ul {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 1400px) {
+  .header-area {
+    &.box-90 {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .container-fluid > .row {
+    justify-content: space-between;
+  }
+}
+
+
+// product area
+
 .product-area {
   & #products-container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
 }
 
