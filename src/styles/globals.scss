@@ -8337,32 +8337,52 @@ img.mfp-img {
       top: 50% !important;
       opacity: 1 !important;
       background-color: #fff !important;
-    }
-  }
 
-  & .control-prev.control-arrow {
-    left: 20px !important;
+      &.control-prev {
+        left: -80px !important;
+
+        &::before {
+          border-right: 8px solid #000 !important;
+        }
+
+        &:hover {
+          box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.4);
+          background: #fe4536 !important;
+
+          &::before {
+            border-right: 8px solid #fff !important;
+          }
+        }
+      }
+
+      &.control-next {
+        right: -80px !important;
+
+        &::before {
+          border-left: 8px solid #000 !important;
+        }
+
+        &:hover {
+          box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.4);
+          background: #fe4536 !important;
+
+          &::before {
+            border-left: 8px solid #fff !important;
+          }
+        }
+      }
+    }
 
     &:hover {
-      box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.4);
-      background: #fe4536 !important;
-    }
+      & .control-arrow {
+        &.control-prev {
+          left: 20px !important;
+        }
 
-    &::before {
-      border-right: 8px solid #000 !important;
-    }
-  }
-
-  & .control-next.control-arrow {
-    right: 20px !important;
-
-    &:hover {
-      box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.4);
-      background: #fe4536 !important;
-    }
-
-    &::before {
-      border-left: 8px solid #000 !important;
+        &.control-next {
+          right: 20px !important;
+        }
+      }
     }
   }
 }
