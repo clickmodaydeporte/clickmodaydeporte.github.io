@@ -2848,9 +2848,21 @@ label {
           & li {
             width: 33.3333%;
             min-width: 33.3333%;
-            display: block;
+            display: flex;
+            flex-direction: column;
             float: left;
             padding-right: 30px;
+
+            & .submenu.level-1,
+            & .submenu {
+              display: flex;
+              flex-direction: column;
+
+              & > li {
+                display: block;
+                width: auto;
+              }
+            }
           }
 
           & > li {
@@ -2889,7 +2901,6 @@ label {
           & li {
             & ul.submenu {
               position: static;
-              display: block;
               border: none;
               margin-top: 20px;
               opacity: 0;

@@ -21,6 +21,16 @@ const MainMenu: React.FC = () => {
                 <ul className="submenu  level-1">
                   <li>
                     <a href="">
+                      Calzas cortas
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Remeras manga larga
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
                       Calzas
                     </a>
                   </li>
