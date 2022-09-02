@@ -78,6 +78,10 @@
   position: relative;
 }
 
+.display-none {
+  display: none;
+}
+
 /* ----------------------------------------------
     a- Margin Top
 ------------------------------------------------- */
@@ -2998,6 +3002,7 @@ label {
       & > a {
         font-size: 16px;
         position: relative;
+        bottom: -10px;
         height: 50px;
         width: 50px;
         background: #fff1f0;
@@ -8284,7 +8289,7 @@ img.mfp-img {
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 992px) {
   .container-fluid > .row {
     justify-content: space-between;
   }

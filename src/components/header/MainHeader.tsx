@@ -1,6 +1,7 @@
 import React from "react";
 import LogoDesktop from "./components/LogoDesktop";
 import MainMenu from "./components/MainMenu";
+import MenuMobile from "./components/MenuMobile";
 import PopupMinicart from "./components/PopupMinicart";
 
 const MainHeader: React.FC = () => {
@@ -29,7 +30,7 @@ const MainHeader: React.FC = () => {
               </div>
             </div>
             <div className="col-12 d-xl-none">
-              <div className="mobile-menu"></div>
+              <MenuMobile />
             </div>
           </div>
         </div>
