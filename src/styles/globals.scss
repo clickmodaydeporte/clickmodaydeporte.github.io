@@ -1,5 +1,6 @@
 /* 
 
+    - VARIABLES
     1 - DEFAULT STYLES
         a- Margin Top
         b- Margin Bottom
@@ -71,6 +72,21 @@
       - Banners section
     
 */
+
+
+/* ------------------------------------------------------
+---------------------------------------------------------
+    - VARIABLES
+---------------------------------------------------------
+--------------------------------------------------------- */
+
+$primary-color: #e361b2;
+$secondary-color: #645CAA;
+$black: #10111e;
+$total-black: #000000;
+$white: #ffffff;
+$success: #84b77c;
+$danger: #fe4536;
 
 /* ------------------------------------------------------
 ---------------------------------------------------------
@@ -965,15 +981,15 @@
 }
 
 .white-bg {
-  background: #fff;
+  background: $white;
 }
 
 .black-bg {
-  background: #10111e;
+  background: $black;
 }
 
 .theme-bg {
-  background: #84b77c;
+  background: $secondary-color;
 }
 
 .theme-soft-bg {
@@ -989,7 +1005,7 @@
 ------------------------------------------------- */
 
 .white-color {
-  color: #fff;
+  color: $white;
 }
 
 .black-color {
@@ -1013,7 +1029,7 @@
 }
 
 [data-overlay]::before {
-  background: #000 none repeat scroll 0 0;
+  background: $total-black none repeat scroll 0 0;
 
   content: "";
 
@@ -1092,8 +1108,6 @@ a.meanmenu-reveal {
   }
 
   & a.meanmenu-reveal {
-    border: 1px solid #fe5245;
-    color: #fe5245;
     cursor: pointer;
     display: block;
     font-family: Arial, Helvetica, sans-serif;
@@ -1110,7 +1124,6 @@ a.meanmenu-reveal {
     width: 34px;
 
     & span {
-      background: #fe5245;
       display: block;
       height: 3px;
       margin-top: 5px;
@@ -1138,7 +1151,7 @@ a.meanmenu-reveal {
 
         & a {
           border-top: 1px solid rgba(255, 255, 255, 0.5);
-          color: #fff;
+          color: $white;
           display: block;
           float: left;
           margin: 0;
@@ -1240,11 +1253,11 @@ a.meanmenu-reveal {
 .transparent-header {
   & .mean-container {
     & a.meanmenu-reveal {
-      border: 1px solid #fe4536;
-      color: #fe4536;
+      border: 1px solid $primary-color;
+      color: $primary-color;
 
       & span {
-        background: #fe4536;
+        background: $primary-color;
       }
     }
   }
@@ -1253,11 +1266,11 @@ a.meanmenu-reveal {
 .transparent-header-2 {
   & .mean-container {
     & a.meanmenu-reveal {
-      border: 1px solid #fff;
-      color: #fff;
+      border: 1px solid $white;
+      color: $white;
 
       & span {
-        background: #fff;
+        background: $white;
       }
     }
   }
@@ -1266,11 +1279,11 @@ a.meanmenu-reveal {
 .header-2 {
   & .mean-container {
     & a.meanmenu-reveal {
-      border: 1px solid #fff;
-      color: #fff;
+      border: 1px solid $white;
+      color: $white;
 
       & span {
-        background: #fff;
+        background: $white;
       }
     }
   }
@@ -2346,13 +2359,13 @@ a:focus,
 
 a:focus,
 a:hover {
-  color: #10111e;
+  color: $black;
   text-decoration: none;
 }
 
 a,
 button {
-  color: #10111e;
+  color: $black;
   outline: medium none;
   transition: 0.3s;
 }
@@ -2385,7 +2398,7 @@ h5,
 h6 {
   font-family: "Rubik", sans-serif;
   font-weight: normal;
-  color: #10111e;
+  color: $black;
   margin-top: 0px;
   font-style: normal;
   font-weight: 500;
@@ -2455,19 +2468,19 @@ label {
 
 *::-moz-selection {
   background: #d6b161;
-  color: #fff;
+  color: $white;
   text-shadow: none;
 }
 
 ::-moz-selection {
   background: #444;
-  color: #fff;
+  color: $white;
   text-shadow: none;
 }
 
 ::selection {
   background: #444;
-  color: #fff;
+  color: $white;
   text-shadow: none;
 }
 
@@ -2525,31 +2538,31 @@ label {
 }
 
 .theme-btn {
-  background: #fe4536;
-  color: #fff;
+  background: $primary-color;
+  color: $white;
 
   &:hover {
-    background: #84b77c;
-    color: #fff;
+    background: $secondary-color;
+    color: $white;
   }
 }
 
 .theme-btn-2 {
-  background: #84b77c;
-  color: #fff;
+  background: $secondary-color;
+  color: $white;
 
   &:hover {
-    background: #fe4536;
-    color: #fff;
+    background: $primary-color;
+    color: $white;
   }
 }
 
 .white-btn {
-  background: #fff;
+  background: $white;
 
   &:hover {
-    background: #84b77c;
-    color: #fff;
+    background: $secondary-color;
+    color: $white;
   }
 }
 
@@ -2581,7 +2594,7 @@ label {
 
     &:hover {
       background: #2b96cc;
-      color: #fff;
+      color: $white;
     }
   }
 
@@ -2601,17 +2614,17 @@ label {
   position: absolute;
   bottom: 50px;
   right: 50px;
-  background: #84b77c;
+  background: $secondary-color;
   height: 60px;
   width: 60px;
   border-radius: 50%;
   text-align: center;
   line-height: 60px;
-  color: #ffffff;
+  color: $white;
   font-size: 18px;
 
   &:hover {
-    background: #fe4536;
+    background: $primary-color;
   }
 }
 
@@ -2622,7 +2635,7 @@ label {
 .basic-bar {
   height: 60px;
   width: 60px;
-  background: #fe4536;
+  background: $primary-color;
   border-radius: 50%;
   margin-right: 50px;
   padding: 14px 0;
@@ -2632,7 +2645,7 @@ label {
     height: 2px;
     width: 15px;
     display: block;
-    background: #fff;
+    background: $white;
     margin: auto;
     margin-top: 6px;
     margin-bottom: 6px;
@@ -2696,7 +2709,7 @@ label {
 
       &:hover {
         & > a {
-          color: #fe4536;
+          color: $primary-color;
         }
 
         & ul {
@@ -2724,7 +2737,7 @@ label {
           padding: 3px 0;
 
           & a {
-            color: #fff;
+            color: $white;
             font-size: 12px;
           }
         }
@@ -2752,7 +2765,7 @@ label {
       position: relative;
 
       & a {
-        color: #10111e;
+        color: $black;
         font-size: 15px;
         line-height: 1;
         font-weight: 500;
@@ -2763,7 +2776,7 @@ label {
 
       &:hover {
         & > a {
-          color: #fe4536;
+          color: $primary-color;
         }
 
         & > ul.submenu {
@@ -2777,7 +2790,7 @@ label {
           position: absolute;
           top: 100%;
           left: 0;
-          background: #fff;
+          background: $white;
           width: 250px;
           transition: 0.3s;
           opacity: 0;
@@ -2797,14 +2810,14 @@ label {
 
             & a {
               padding: 16px 20px;
-              color: #10111e;
+              color: $black;
               font-size: 12px;
               display: block;
             }
 
             &:hover {
               & > a {
-                color: #fe4536;
+                color: $primary-color;
               }
             }
 
@@ -2883,7 +2896,7 @@ label {
               font-size: 12px;
               line-height: inherit;
               font-weight: 600;
-              color: #10111e;
+              color: $black;
               padding: 0;
               text-transform: uppercase;
             }
@@ -2963,7 +2976,7 @@ label {
 
 .sticky-header {
   animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
-  background: #fff;
+  background: $white;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   left: 0;
   margin: 0 auto;
@@ -3011,8 +3024,8 @@ label {
       position: relative;
 
       & a:hover {
-        background: #fe5245;
-        color: #fff;
+        background: $primary-color;
+        color: $white;
       }
     }
   }
@@ -3030,7 +3043,6 @@ label {
         line-height: 50px;
         text-align: center;
         border-radius: 50%;
-        color: #fe5245;
       }
     }
   }
@@ -3038,8 +3050,8 @@ label {
 
 .cart-count {
   position: absolute;
-  background: #fe4536;
-  color: #fff;
+  background: $primary-color;
+  color: $white;
   height: 20px;
   width: 20px;
   font-size: 10px;
@@ -3056,7 +3068,7 @@ label {
 .header-right {
   & ul {
     &.minicart {
-      background: #fff;
+      background: $white;
       opacity: 0;
       padding: 25px;
       position: absolute;
@@ -3098,7 +3110,7 @@ label {
           margin-top: 30px;
 
           & > a {
-            color: #fe4536;
+            color: $primary-color;
 
             &:hover {
               color: #a5a7bc;
@@ -3109,8 +3121,8 @@ label {
 
         & .checkout-link {
           & a {
-            background: #84b77c;
-            color: #fff;
+            background: $secondary-color;
+            color: $white;
             display: block;
             font-weight: 500;
             padding: 16px 30px;
@@ -3126,11 +3138,11 @@ label {
 
             &:hover,
             &.red-color {
-              background: #fe4536;
+              background: $primary-color;
             }
 
             &.red-color:hover {
-              background: #84b77c;
+              background: $secondary-color;
             }
           }
         }
@@ -3157,12 +3169,12 @@ ul {
   &.minicart {
     & .cart-content {
       & a {
-        color: #10111e;
+        color: $black;
         font-size: 14px;
         background: none;
 
         &:hover {
-          color: #fe4536;
+          color: $primary-color;
           background: none;
         }
       }
@@ -3218,7 +3230,7 @@ ul {
   & ul {
     & li {
       & a {
-        color: #fff;
+        color: $white;
       }
     }
   }
@@ -3285,17 +3297,17 @@ ul {
   }
 
   & h4 {
-    color: #ffffff;
+    color: $white;
   }
 }
 
 .social-icon-right {
   & a {
-    color: #ffffff;
+    color: $white;
     margin-right: 15px;
 
     &:hover {
-      color: #fe4536;
+      color: $primary-color;
     }
   }
 }
@@ -3308,7 +3320,7 @@ ul {
       padding: 0 30px;
 
       & a {
-        color: #fff;
+        color: $white;
         padding: 20px 0;
         display: block;
 
@@ -3338,7 +3350,7 @@ ul {
   position: absolute;
   top: 150px;
   z-index: 999;
-  background: #fff;
+  background: $white;
   width: 250px;
   padding: 0 30px;
   left: 15px;
@@ -3371,7 +3383,7 @@ ul {
           position: absolute;
           height: 0;
           width: 4px;
-          background: #fe4536;
+          background: $primary-color;
           left: -24px;
           top: auto;
           bottom: 0;
@@ -3380,7 +3392,7 @@ ul {
         }
 
         &:hover {
-          color: #fe4536;
+          color: $primary-color;
 
           &:before {
             height: 100%;
@@ -3389,7 +3401,7 @@ ul {
           }
         }
         & i {
-          color: #fe4536;
+          color: $primary-color;
           width: 21px;
           display: inline-block;
         }
@@ -3537,7 +3549,7 @@ ul {
       border: 0;
       font-size: 16px;
       padding: 0;
-      color: #10111e;
+      color: $black;
       z-index: 2;
       opacity: 0;
       visibility: hidden;
@@ -3545,7 +3557,7 @@ ul {
       width: 80px;
       border-radius: 50%;
       cursor: pointer;
-      background: #fff;
+      background: $white;
       line-height: 80px;
     }
 
@@ -3555,8 +3567,8 @@ ul {
     }
 
     &:hover {
-      background: #fe4536;
-      color: #fff;
+      background: $primary-color;
+      color: $white;
       box-shadow: 0px 6px 12px 0px rgba(254, 69, 54, 0.4);
     }
   }
@@ -3578,8 +3590,8 @@ ul {
     & li {
       &.slick-active {
         & button {
-          border-color: #fff;
-          background: #fff;
+          border-color: $white;
+          background: $white;
         }
       }
     }
@@ -3589,7 +3601,7 @@ ul {
 .slider-3 {
   & button {
     &.slick-arrow {
-      color: #10111e;
+      color: $black;
       background: #fff1f0;
     }
   }
@@ -3600,7 +3612,7 @@ ul {
     display: inline-block;
     font-size: 40px;
     font-weight: 300;
-    color: #fe4536;
+    color: $primary-color;
     margin-right: 20px;
     margin-bottom: 0;
   }
@@ -3627,7 +3639,7 @@ ul {
       color: #e5dfda;
 
       &.home-2-shape {
-        color: #fff;
+        color: $white;
         opacity: 0.3;
       }
     }
@@ -3635,7 +3647,7 @@ ul {
 }
 
 .home-2-shape {
-  color: #fff !important;
+  color: $white !important;
   opacity: 0.3;
 }
 
@@ -3683,13 +3695,13 @@ ul {
   & h1 {
     font-size: 80px;
     font-size: 120px;
-    color: #ffffff;
+    color: $white;
     margin-bottom: 25px;
   }
 
   & h2 {
     font-size: 300px;
-    color: #fff;
+    color: $white;
     opacity: 0.05;
     line-height: 0.7;
   }
@@ -3734,7 +3746,7 @@ ul {
       margin: 0 5px;
 
       & button {
-        background: #fe4536;
+        background: $primary-color;
         border: 0;
         height: 4px;
         width: 20px;
@@ -3743,7 +3755,7 @@ ul {
 
       &.slick-active {
         & button {
-          background: #fff;
+          background: $white;
         }
       }
     }
@@ -3769,7 +3781,7 @@ ul {
   bottom: 45px;
   left: 45px;
   right: 45px;
-  background: #fff;
+  background: $white;
   padding: 45px;
 
   & span {
@@ -3777,7 +3789,7 @@ ul {
     letter-spacing: 2px;
     text-transform: uppercase;
     font-weight: 500;
-    color: #84b77c;
+    color: $secondary-color;
     display: block;
     margin-bottom: 10px;
   }
@@ -3787,7 +3799,7 @@ ul {
 
     & a {
       &:hover {
-        color: #fe4536;
+        color: $primary-color;
       }
     }
   }
@@ -3800,13 +3812,13 @@ ul {
   transform: translateY(-50%);
 
   & a {
-    color: #fe4536;
+    color: $primary-color;
     text-transform: uppercase;
     font-weight: 500;
     letter-spacing: 2px;
 
     &:hover {
-      color: #84b77c;
+      color: $secondary-color;
     }
   }
 }
@@ -3815,9 +3827,9 @@ ul {
   position: absolute;
   top: 40px;
   right: 40px;
-  background: #fff;
+  background: $white;
   padding: 40px;
-  border-top: 3px solid #84b77c;
+  border-top: 3px solid $secondary-color;
   width: 410px;
 
   & span {
@@ -3825,7 +3837,7 @@ ul {
     letter-spacing: 2px;
     text-transform: uppercase;
     font-weight: 500;
-    color: #84b77c;
+    color: $secondary-color;
     display: block;
     margin-bottom: 10px;
   }
@@ -3859,8 +3871,8 @@ ul {
   & i {
     height: 200px;
     width: 200px;
-    background: #fff;
-    color: #fe4536;
+    background: $white;
+    color: $primary-color;
     display: inline-block;
     text-align: center;
     font-size: 65px;
@@ -3948,7 +3960,7 @@ img {
   right: 0;
 
   & a {
-    background: #fff;
+    background: $white;
     height: 50px;
     width: 50px;
     font-size: 20px;
@@ -3965,8 +3977,8 @@ img {
     }
 
     &:hover {
-      background: #fe4536;
-      color: #fff;
+      background: $primary-color;
+      color: $white;
     }
   }
 }
@@ -3991,8 +4003,8 @@ img {
   z-index: 99;
 
   & span {
-    background: #84b77c;
-    color: #fff;
+    background: $secondary-color;
+    color: $white;
     text-transform: uppercase;
     font-weight: 500;
     padding: 7px 15px;
@@ -4005,7 +4017,7 @@ img {
     letter-spacing: 2px;
 
     &.sale {
-      background: #fe4536;
+      background: $primary-color;
     }
   }
 }
@@ -4022,7 +4034,7 @@ img {
 
     & a {
       &:hover {
-        color: #fe4536;
+        color: $primary-color;
       }
     }
   }
@@ -4031,12 +4043,12 @@ img {
 .pro-cat {
   & a {
     font-size: 14px;
-    color: #fe4536;
+    color: $primary-color;
     text-transform: uppercase;
     letter-spacing: 2px;
 
     &:hover {
-      color: #84b77c;
+      color: $secondary-color;
     }
   }
 }
@@ -4072,8 +4084,8 @@ img {
     font-size: 14px;
 
     &:hover {
-      background: #fe4536;
-      color: #fff;
+      background: $primary-color;
+      color: $white;
     }
   }
 }
@@ -4094,7 +4106,7 @@ img {
 
     & a {
       font-size: 14px;
-      color: #10111e;
+      color: $black;
       font-weight: 500;
       padding: 18px 30px;
       border: 2px solid #ecedff;
@@ -4103,9 +4115,9 @@ img {
       letter-spacing: 2px;
 
       &.active {
-        color: #fff;
-        background: #fe4536;
-        border-color: #fe4536;
+        color: $white;
+        background: $primary-color;
+        border-color: $primary-color;
       }
     }
   }
@@ -4124,7 +4136,7 @@ img {
         border: 0;
         font-size: 13px;
         padding: 0;
-        color: #10111e;
+        color: $black;
         z-index: 2;
         opacity: 1;
         visibility: visible;
@@ -4155,8 +4167,8 @@ img {
   & .owl-nav {
     & div {
       &:hover {
-        background: #fe4536;
-        color: #fff;
+        background: $primary-color;
+        color: $white;
         box-shadow: 0px 6px 12px 0px rgba(254, 69, 54, 0.4);
       }
     }
@@ -4170,7 +4182,7 @@ img {
 }
 
 .top-seller-content {
-  background: #fff;
+  background: $white;
   display: inline-block;
   padding: 45px;
   margin-top: -80px;
@@ -4183,7 +4195,7 @@ h2 {
 
   & a {
     &:hover {
-      color: #fe4536;
+      color: $primary-color;
     }
   }
 }
@@ -4193,7 +4205,7 @@ h2 {
   width: 450px;
   position: absolute;
   left: 0;
-  background: #fff;
+  background: $white;
   padding: 45px;
   text-align: left;
   top: 35px;
@@ -4203,19 +4215,19 @@ h2 {
 
     & a {
       &:hover {
-        color: #fe4536;
+        color: $primary-color;
       }
     }
   }
 }
 
 .shop-btn {
-  background: #fe4536;
+  background: $primary-color;
   height: 60px;
   width: 60px;
   font-size: 22px;
   display: inline-block;
-  color: #fff;
+  color: $white;
   text-align: center;
   line-height: 56px;
   border-radius: 50%;
@@ -4223,8 +4235,8 @@ h2 {
   box-shadow: 0px 12px 24px 0px rgba(186, 186, 186, 0.3);
 
   &:hover {
-    background: #84b77c;
-    color: #fff;
+    background: $secondary-color;
+    color: $white;
   }
 }
 
@@ -4247,7 +4259,7 @@ h2 {
 
   &.white-color {
     & h2 {
-      color: #fff;
+      color: $white;
     }
   }
 
@@ -4261,7 +4273,7 @@ h2 {
 ------------------------------------------------- */
 
 .upc-price {
-  color: #fe4536;
+  color: $primary-color;
   font-weight: 500;
   letter-spacing: 2px;
   font-size: 16px;
@@ -4275,7 +4287,7 @@ h2 {
 
     & a {
       &:hover {
-        color: #84b77c;
+        color: $secondary-color;
       }
     }
   }
@@ -4295,7 +4307,7 @@ h2 {
       font-size: 40px;
       line-height: 1;
       margin-right: 20px;
-      color: #84b77c;
+      color: $secondary-color;
     }
   }
 }
@@ -4326,13 +4338,13 @@ h2 {
   text-align: center;
   font-weight: 500;
   padding: 28px 0;
-  background: #fff;
+  background: $white;
   margin-right: 15px;
   box-shadow: 0px 16px 32px 0px rgba(224, 226, 255, 0.3);
 
   & span {
     font-size: 30px;
-    color: #10111e;
+    color: $black;
     line-height: 1;
     display: block;
     margin-bottom: 10px;
@@ -4403,18 +4415,18 @@ h2 {
 }
 
 .bakix-map-icon {
-  background: #84b77c;
+  background: $secondary-color;
   height: 35px;
   width: 35px;
   border-radius: 50%;
   cursor: pointer;
   text-align: center;
   line-height: 34px;
-  color: #fff;
+  color: $white;
 }
 
 .bakix-map-address {
-  background: #fff;
+  background: $white;
   padding: 12px;
   margin-top: 10px;
   opacity: 0;
@@ -4550,7 +4562,7 @@ h2 {
     font-size: 16px;
 
     &:hover {
-      color: #fe4536;
+      color: $primary-color;
     }
   }
 }
@@ -4568,7 +4580,7 @@ h2 {
       font-size: 14px;
 
       &:hover {
-        color: #fe4536;
+        color: $primary-color;
       }
     }
   }
@@ -4606,10 +4618,10 @@ h2 {
     color: #747691;
 
     & a {
-      color: #fe4536;
+      color: $primary-color;
 
       &:hover {
-        color: #84b77c;
+        color: $secondary-color;
       }
     }
   }
@@ -4624,7 +4636,7 @@ h2 {
     border: 1px solid #444;
     padding: 15px;
     width: 100%;
-    color: #fff;
+    color: $white;
   }
 
   & button {
@@ -4708,7 +4720,7 @@ h2 {
     text-transform: uppercase;
     background: transparent;
     font-size: 25px;
-    color: #fff;
+    color: $white;
     border-bottom: 2px solid #898989;
     text-align: center;
     letter-spacing: 2px;
@@ -4718,7 +4730,7 @@ h2 {
 .search-wrap {
   & input.form-control {
     &:focus {
-      background-color: #fff;
+      background-color: $white;
     }
   }
 }
@@ -4748,24 +4760,24 @@ h2 {
 }
 
 input.main-search-input::-webkit-input-placeholder {
-  color: #fff;
+  color: $white;
   font-size: 25px;
 }
 
 input.main-search-input:-moz-placeholder {
-  color: #fff;
+  color: $white;
   opacity: 1;
   font-size: 25px;
 }
 
 input.main-search-input::-moz-placeholder {
-  color: #fff;
+  color: $white;
   opacity: 1;
   font-size: 25px;
 }
 
 input.main-search-input:-ms-input-placeholder {
-  color: #fff;
+  color: $white;
   font-size: 25px;
 }
 
@@ -4774,7 +4786,7 @@ input.main-search-input:-ms-input-placeholder {
   top: 50px;
   right: 50px;
   font-size: 30px;
-  color: #fff;
+  color: $white;
   cursor: pointer;
 }
 
@@ -4809,13 +4821,13 @@ input.main-search-input:-ms-input-placeholder {
 
   & a {
     & i {
-      color: #fe4536;
+      color: $primary-color;
       transition: 0.3s;
     }
 
     &:hover {
       & i {
-        color: #fff;
+        color: $white;
       }
     }
   }
@@ -4851,7 +4863,7 @@ input.main-search-input:-ms-input-placeholder {
   display: inline-block;
   border-radius: 0;
   padding: 24px 42px;
-  background: #ffffff;
+  background: $white;
   line-height: 1;
 
   & li {
@@ -4906,7 +4918,7 @@ input.main-search-input:-ms-input-placeholder {
       & a {
         height: 70px;
         width: 70px;
-        background: #ffffff;
+        background: $white;
         color: #9990b8;
         font-size: 16px;
         font-weight: 500;
@@ -4922,8 +4934,8 @@ input.main-search-input:-ms-input-placeholder {
 
 .basic-pagination ul li a:hover,
 .basic-pagination ul li.active a {
-  background: #fe4536;
-  color: #ffffff;
+  background: $primary-color;
+  color: $white;
   box-shadow: 0px 8px 16px 0px rgba(254, 69, 54, 0.3);
 }
 
@@ -4944,9 +4956,9 @@ input.main-search-input:-ms-input-placeholder {
 
 .basic-pagination-2 ul li a:hover,
 .basic-pagination-2 ul li.active a {
-  background: #fe4536;
-  color: #ffffff;
-  border-color: #fe4536;
+  background: $primary-color;
+  color: $white;
+  border-color: $primary-color;
   box-shadow: 0px 8px 16px 0px rgba(254, 69, 54, 0.3);
 }
 
@@ -5013,7 +5025,7 @@ input.main-search-input:-ms-input-placeholder {
       & a {
         font-size: 16px;
         font-weight: 500;
-        color: #fe4536;
+        color: $primary-color;
         letter-spacing: 2px;
         padding: 0;
         text-transform: uppercase;
@@ -5027,7 +5039,7 @@ input.main-search-input:-ms-input-placeholder {
 
         &.active {
           color: white;
-          background: #fe4536;
+          background: $primary-color;
           box-shadow: 0px 8px 16px 0px rgba(254, 69, 54, 0.3);
         }
       }
@@ -5042,14 +5054,14 @@ input.main-search-input:-ms-input-placeholder {
     visibility: visible;
 
     & a {
-      background: #84b77c;
-      color: #fff;
-      border-color: #84b77c;
+      background: $secondary-color;
+      color: $white;
+      border-color: $secondary-color;
 
       &:hover {
-        background: #fe4536;
-        color: #fff;
-        border-color: #fe4536;
+        background: $primary-color;
+        color: $white;
+        border-color: $primary-color;
       }
     }
   }
@@ -5116,9 +5128,9 @@ input.main-search-input:-ms-input-placeholder {
 
   & button {
     position: absolute;
-    background: #fe4536;
+    background: $primary-color;
     border: 0;
-    color: #fff;
+    color: $white;
     height: 60px;
     width: 60px;
     right: 0;
@@ -5127,7 +5139,7 @@ input.main-search-input:-ms-input-placeholder {
     box-shadow: 0px 8px 16px 0px rgba(254, 69, 54, 0.3);
 
     &:hover {
-      background: #84b77c;
+      background: $secondary-color;
     }
   }
 }
@@ -5145,7 +5157,7 @@ input.main-search-input:-ms-input-placeholder {
 
       &:hover,
       &:hover i {
-        color: #fe4536;
+        color: $primary-color;
       }
 
       & i {
@@ -5162,7 +5174,7 @@ input.main-search-input:-ms-input-placeholder {
       background: transparent;
       display: inline-block;
       border-radius: 50%;
-      border: 4px solid #fff;
+      border: 4px solid $white;
       box-shadow: 0px 1px 10px 0px rgba(254, 69, 54, 0.2);
       position: relative;
       top: 2px;
@@ -5217,7 +5229,7 @@ input.main-search-input:-ms-input-placeholder {
   height: 5px;
 
   & span.ui-state-default {
-    background: #84b77c;
+    background: $secondary-color;
     border: 0 none;
     border-radius: 50%;
     height: 15px;
@@ -5226,7 +5238,7 @@ input.main-search-input:-ms-input-placeholder {
 }
 
 .ui-slider-horizontal .ui-slider-range {
-  background: #84b77c;
+  background: $secondary-color;
 }
 
 .shop-tag {
@@ -5243,9 +5255,9 @@ input.main-search-input:-ms-input-placeholder {
       font-size: 14px;
 
       &:hover {
-        background: #fe4536;
-        color: #fff;
-        border-color: #fe4536;
+        background: $primary-color;
+        color: $white;
+        border-color: $primary-color;
       }
     }
   }
@@ -5277,7 +5289,7 @@ input.main-search-input:-ms-input-placeholder {
 
     & a {
       &:hover {
-        color: #fe4536;
+        color: $primary-color;
       }
     }
   }
@@ -5396,14 +5408,14 @@ input.main-search-input:-ms-input-placeholder {
     color: #747691;
 
     &:hover {
-      color: #fe4536;
+      color: $primary-color;
     }
   }
 }
 
 .details-price {
   & span {
-    color: #fe4536;
+    color: $primary-color;
     font-weight: 300;
     font-size: 40px;
     margin-right: 25px;
@@ -5454,8 +5466,8 @@ input.main-search-input:-ms-input-placeholder {
 
     &.active {
       & a {
-        border: 2px solid #fe4536;
-        color: #fe4536;
+        border: 2px solid $primary-color;
+        color: $primary-color;
       }
     }
   }
@@ -5480,7 +5492,7 @@ input.main-search-input:-ms-input-placeholder {
 
     & span {
       font-size: 18px;
-      color: #fe4536;
+      color: $primary-color;
       margin-bottom: 7px;
     }
 
@@ -5517,7 +5529,7 @@ input.main-search-input:-ms-input-placeholder {
 
         &.in-stock {
           font-weight: 400;
-          color: #fe4536;
+          color: $primary-color;
         }
       }
     }
@@ -5559,7 +5571,7 @@ input.main-search-input:-ms-input-placeholder {
     line-height: 1;
     width: 40px;
     height: 40px;
-    background: #fff;
+    background: $white;
     font-size: 16px;
     text-align: center;
     line-height: 40px;
@@ -5568,8 +5580,8 @@ input.main-search-input:-ms-input-placeholder {
     transition: 0.3s;
 
     &:hover {
-      background: #fe4536;
-      color: #fff;
+      background: $primary-color;
+      color: $white;
     }
   }
 
@@ -5591,13 +5603,13 @@ input.main-search-input:-ms-input-placeholder {
   background: #fff1f0;
   border-radius: 50px;
   margin-right: 13px;
-  color: #fe4536;
+  color: $primary-color;
   font-size: 15px;
   line-height: 50px;
 
   &:hover {
-    background: #fe4536;
-    color: #fff;
+    background: $primary-color;
+    color: $white;
   }
 }
 
@@ -5620,9 +5632,9 @@ input.main-search-input:-ms-input-placeholder {
     border: 2px solid #ecedff;
 
     &.active {
-      background: #fe4536;
-      border-color: #fe4536;
-      color: #fff;
+      background: $primary-color;
+      border-color: $primary-color;
+      color: $white;
     }
   }
 
@@ -5676,7 +5688,7 @@ input.main-search-input:-ms-input-placeholder {
 .pro-rating {
   & i {
     font-size: 12px;
-    color: #fe4536;
+    color: $primary-color;
   }
 }
 
@@ -5705,7 +5717,7 @@ input.main-search-input:-ms-input-placeholder {
     font-size: 13px;
 
     &:hover {
-      color: #fe4536;
+      color: $primary-color;
     }
   }
 }
@@ -5763,7 +5775,7 @@ input.main-search-input:-ms-input-placeholder {
     display: block;
 
     & span {
-      color: #fe4536;
+      color: $primary-color;
     }
   }
 }
@@ -5786,7 +5798,7 @@ input.main-search-input:-ms-input-placeholder {
     left: 0;
     right: 0;
     top: -9px;
-    background: #ffffff;
+    background: $white;
     display: inline-block;
     width: 40px;
     margin: auto;
@@ -5797,10 +5809,10 @@ input.main-search-input:-ms-input-placeholder {
 
 .forgot-login {
   & a {
-    color: #fe4536;
+    color: $primary-color;
 
     &:hover {
-      color: #84b77c;
+      color: $secondary-color;
     }
   }
 }
@@ -5843,7 +5855,7 @@ input.main-search-input:-ms-input-placeholder {
 
 .table-content {
   & table {
-    background: #ffffff;
+    background: $white;
     border-color: #eaedff;
     border-radius: 0;
     border-style: solid;
@@ -5865,7 +5877,7 @@ input.main-search-input:-ms-input-placeholder {
 
         & a {
           &:hover {
-            color: #fe4536;
+            color: $primary-color;
           }
         }
       }
@@ -5994,7 +6006,7 @@ td.product-thumbnail img {
 .coupon-accordion {
   & h3 {
     background-color: #fff1f0;
-    border-top: 3px solid #fe4536;
+    border-top: 3px solid $primary-color;
     font-size: 14px;
     font-weight: 400;
     margin: 0 0 25px;
@@ -6021,7 +6033,7 @@ td.product-thumbnail img {
 
 .coupon-accordion span:hover,
 p.lost-password a:hover {
-  color: #fe4536;
+  color: $primary-color;
 }
 
 .coupon-content {
@@ -6066,7 +6078,7 @@ p.lost-password a:hover {
 
 .coupon-info p.form-row input[type="submit"]:hover,
 p.checkout-coupon input[type="submit"]:hover {
-  background: #fe4536 none repeat scroll 0 0;
+  background: $primary-color none repeat scroll 0 0;
 }
 
 .coupon-info p.form-row input[type="checkbox"] {
@@ -6089,7 +6101,7 @@ p.checkout-coupon input[type="submit"]:hover {
 .coupon-info p.form-row input[type="submit"] {
   background: #252525 none repeat scroll 0 0;
   border: medium none;
-  color: #fff;
+  color: $white;
   display: inline-block;
   float: left;
   font-size: 12px;
@@ -6184,7 +6196,7 @@ p {
 .checkout-form-list input[type="text"],
 .checkout-form-list input[type="password"],
 .checkout-form-list input[type="email"] {
-  background: #ffffff;
+  background: $white;
   border: 1px solid #eaedff;
   border-radius: 0;
   height: 45px;
@@ -6341,7 +6353,7 @@ p {
 }
 
 .your-order-table table tr.order-total td span {
-  color: #fe4536;
+  color: $primary-color;
   font-size: 18px;
   font-weight: 500;
 }
@@ -6375,7 +6387,7 @@ p {
   }
 
   & .card {
-    background-color: #ffffff;
+    background-color: $white;
     border: 1px solid #eaedff;
     border-radius: 0;
     margin-bottom: 10px;
@@ -6388,7 +6400,7 @@ p {
   }
 
   & .card-header {
-    background-color: #ffffff;
+    background-color: $white;
     border-bottom: 1px solid #eaedff;
   }
 }
@@ -6401,7 +6413,7 @@ p {
   & input {
     background: #232323 none repeat scroll 0 0;
     border: medium none;
-    color: #fff;
+    color: $white;
     font-size: 15px;
     font-weight: 600;
     height: 40px;
@@ -6412,7 +6424,7 @@ p {
     width: 100%;
 
     &:hover {
-      background: #fe4536 none repeat scroll 0 0;
+      background: $primary-color none repeat scroll 0 0;
     }
   }
 
@@ -6446,14 +6458,14 @@ p {
   padding: 40px 10px;
 
   & i {
-    background: #84b77c;
+    background: $secondary-color;
     font-size: 40px;
     height: 150px;
     width: 150px;
-    color: #ffffff;
+    color: $white;
     border-radius: 50%;
     line-height: 135px;
-    border: 10px solid #fff;
+    border: 10px solid $white;
     box-shadow: 0px 16px 32px 0px rgba(206, 226, 255, 0.4);
     margin-bottom: 30px;
   }
@@ -6476,7 +6488,7 @@ p {
 
 .contact-form {
   & input {
-    background: #ffffff;
+    background: $white;
     height: 80px;
     width: 100%;
     padding: 0 80px;
@@ -6574,32 +6586,7 @@ p {
     font-size: 40px;
     line-height: 1.4;
     font-weight: 300;
-    color: #10111e;
-  }
-}
-
-.bakix-video {
-  position: relative;
-
-  & a {
-    position: absolute;
-    background: #ffffff;
-    height: 120px;
-    width: 120px;
-    top: 50%;
-    left: 0;
-    right: 0;
-    margin: auto;
-    text-align: center;
-    border-radius: 50%;
-    line-height: 120px;
-    color: #fe5245;
-    transform: translateY(-50%);
-
-    &:hover {
-      background: #fe5245;
-      color: #ffffff;
-    }
+    color: $black;
   }
 }
 
@@ -6631,14 +6618,14 @@ p {
     font-size: 40px;
     line-height: 1.4;
     font-weight: 300;
-    color: #ffffff;
+    color: $white;
   }
 
   & span {
     font-weight: 600;
     font-size: 40px;
     font-family: "Poppins", sans-serif;
-    color: #ffffff;
+    color: $white;
   }
 }
 
@@ -6778,7 +6765,7 @@ p {
     height: 0;
     border-style: solid;
     border-width: 12px 10px 0 10px;
-    border-color: #ffffff transparent transparent transparent;
+    border-color: $white transparent transparent transparent;
     position: absolute;
     content: "";
     bottom: -12px;
@@ -6834,7 +6821,7 @@ p {
       color: #747691;
 
       &:hover {
-        color: #fe4536;
+        color: $primary-color;
       }
     }
   }
@@ -6847,7 +6834,7 @@ p {
     line-height: 1.4;
 
     & a:hover {
-      color: #fe4536;
+      color: $primary-color;
     }
   }
 }
@@ -6860,7 +6847,7 @@ p {
   letter-spacing: 2px;
 
   &:hover {
-    color: #ffffff;
+    color: $white;
 
     & i {
       transform: translateX(3px);
@@ -6885,7 +6872,7 @@ p {
     margin-bottom: 15px;
 
     & a:hover {
-      color: #fe4536;
+      color: $primary-color;
     }
   }
 
@@ -6897,7 +6884,7 @@ p {
 .news-meta {
   & span {
     & a {
-      color: #fe4536;
+      color: $primary-color;
       letter-spacing: 2px;
       font-weight: 500;
 
@@ -6930,11 +6917,11 @@ p {
     margin-right: 20px;
 
     & a:hover {
-      color: #84b77c;
+      color: $secondary-color;
     }
 
     & i {
-      color: #84b77c;
+      color: $secondary-color;
       margin-right: 2px;
     }
   }
@@ -6958,7 +6945,7 @@ p {
   margin-bottom: 20px;
 
   & a:hover {
-    color: #fe4536;
+    color: $primary-color;
   }
 }
 
@@ -6969,7 +6956,7 @@ p {
   font-weight: 500;
 
   &:hover {
-    color: #fe4536;
+    color: $primary-color;
 
     & i {
       transform: translateX(5px);
@@ -7002,7 +6989,7 @@ p {
   -ms-transition: all 0.3s ease-out 0s;
   -o-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
-  background: #ffffff;
+  background: $white;
   width: 60px;
   height: 60px;
   color: #6f7172;
@@ -7011,8 +6998,8 @@ p {
 }
 
 .postbox__gallery .slick-arrow:hover {
-  background: #fe4536;
-  color: #ffffff;
+  background: $primary-color;
+  color: $white;
 }
 
 .postbox__gallery .slick-arrow.slick-next {
@@ -7026,7 +7013,7 @@ p {
 
 .video-btn {
   position: absolute;
-  background: #ffffff;
+  background: $white;
   height: 120px;
   width: 120px;
   top: 50%;
@@ -7036,12 +7023,12 @@ p {
   text-align: center;
   border-radius: 50%;
   line-height: 120px;
-  color: #fe4536;
+  color: $primary-color;
   transform: translateY(-50%);
 
   &:hover {
-    background: #fe4536;
-    color: #ffffff;
+    background: $primary-color;
+    color: $white;
   }
 }
 
@@ -7054,7 +7041,7 @@ p {
   & p {
     font-size: 26px;
     margin-bottom: 20px;
-    color: #ffffff;
+    color: $white;
     font-weight: 500;
     line-height: 1.3;
   }
@@ -7072,7 +7059,7 @@ p {
   & footer {
     font-size: 14px;
     letter-spacing: 2px;
-    color: #ffffff;
+    color: $white;
     font-weight: 500;
     text-transform: uppercase;
   }
@@ -7105,11 +7092,11 @@ p {
     height: 100%;
     background: #062a4d;
     padding: 0 25px;
-    color: #ffffff;
+    color: $white;
     line-height: 60px;
 
     &:hover {
-      background: #fe4536;
+      background: $primary-color;
     }
   }
 }
@@ -7129,15 +7116,15 @@ p {
     height: 3px;
     left: 0;
     bottom: 0;
-    border-left: 10px solid #ffffff;
-    border-right: 10px solid #ffffff;
+    border-left: 10px solid $white;
+    border-right: 10px solid $white;
     -webkit-animation: animborder 2s linear infinite;
     animation: animborder 2s linear infinite;
   }
 
   &.border-white {
     &::after {
-      border-color: #ffffff;
+      border-color: $white;
     }
   }
 }
@@ -7159,7 +7146,7 @@ p {
     margin: 0 8px;
 
     &:hover {
-      color: #fe4536;
+      color: $primary-color;
     }
   }
 }
@@ -7206,7 +7193,7 @@ p {
   line-height: 1.3;
 
   & a:hover {
-    color: #fe4536;
+    color: $primary-color;
   }
 }
 
@@ -7234,7 +7221,7 @@ ul {
         display: block;
 
         &:hover {
-          color: #fe4536;
+          color: $primary-color;
         }
       }
     }
@@ -7250,11 +7237,11 @@ ul {
     line-height: 50px;
     margin-right: 2px;
     display: inline-block;
-    color: #ffffff;
+    color: $white;
     margin-bottom: 5px;
 
     &:hover {
-      background: #fe4536;
+      background: $primary-color;
     }
   }
 }
@@ -7289,8 +7276,8 @@ ul {
     color: #5f5b5b;
 
     &:hover {
-      background: #fe4536;
-      color: #ffffff;
+      background: $primary-color;
+      color: $white;
     }
   }
 }
@@ -7323,9 +7310,9 @@ ul {
     margin-bottom: 10px;
 
     &:hover {
-      color: #fff;
-      background: #fe4536;
-      border-color: #fe4536;
+      color: $white;
+      background: $primary-color;
+      border-color: $primary-color;
     }
 
     &:last-child {
@@ -7351,7 +7338,7 @@ ul {
     margin-right: 22px;
 
     &:hover {
-      color: #fe4536;
+      color: $primary-color;
     }
 
     &:last-child {
@@ -7405,7 +7392,7 @@ ul {
     transition: 0.3s;
 
     &:hover {
-      color: #fe4536;
+      color: $primary-color;
     }
   }
 }
@@ -7471,7 +7458,7 @@ ul {
   }
 
   & span {
-    color: #fe4536;
+    color: $primary-color;
     font-size: 12px;
     font-weight: 500;
     text-transform: uppercase;
@@ -7493,7 +7480,7 @@ ul {
   top: 0;
 
   &:hover {
-    color: #fe4536;
+    color: $primary-color;
   }
 
   & i {
@@ -7563,7 +7550,7 @@ ul {
     font-size: 16px;
     text-align: center;
     right: 30px;
-    color: #fe4536;
+    color: $primary-color;
     top: 18px;
   }
 }
@@ -7584,7 +7571,7 @@ ul {
   }
 
   & a:hover {
-    color: #fe4536;
+    color: $primary-color;
   }
 
   & h4 {
@@ -7592,7 +7579,7 @@ ul {
     margin: 0;
 
     & a:hover {
-      color: #fe4536;
+      color: $primary-color;
     }
   }
 }
@@ -7698,7 +7685,7 @@ ul {
     width: 50px;
     height: 50px;
     border-radius: 100%;
-    background: #fe4536;
+    background: $primary-color;
     -webkit-animation: preloader 1.3s linear infinite;
     animation: preloader 1.3s linear infinite;
 
@@ -7974,7 +7961,7 @@ ul {
   color: #ccc;
 }
 .mfp-preloader a:hover {
-  color: #fff;
+  color: $white;
 }
 
 .mfp-s-ready .mfp-preloader {
@@ -8016,7 +8003,7 @@ button::-moz-focus-inner {
   text-align: center;
   opacity: 0.65;
   padding: 0 0 18px 10px;
-  color: #fff;
+  color: $white;
   font-style: normal;
   font-size: 28px;
   font-family: Arial, Baskerville, monospace;
@@ -8035,7 +8022,7 @@ button::-moz-focus-inner {
 
 .mfp-image-holder .mfp-close,
 .mfp-iframe-holder .mfp-close {
-  color: #fff;
+  color: $white;
   right: -6px;
   text-align: right;
   padding-right: 6px;
@@ -8098,7 +8085,7 @@ button::-moz-focus-inner {
   left: 0;
 }
 .mfp-arrow-left:after {
-  border-right: 17px solid #fff;
+  border-right: 17px solid $white;
   margin-left: 31px;
 }
 .mfp-arrow-left:before {
@@ -8110,7 +8097,7 @@ button::-moz-focus-inner {
   right: 0;
 }
 .mfp-arrow-right:after {
-  border-left: 17px solid #fff;
+  border-left: 17px solid $white;
   margin-left: 39px;
 }
 .mfp-arrow-right:before {
@@ -8403,7 +8390,7 @@ img.mfp-img {
       border-radius: 50% !important;
       top: 50% !important;
       opacity: 1 !important;
-      background-color: #fff !important;
+      background-color: $white !important;
 
       &.control-prev {
         left: -80px !important;
@@ -8414,10 +8401,10 @@ img.mfp-img {
 
         &:hover {
           box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.4);
-          background: #fe4536 !important;
+          background: $primary-color !important;
 
           &::before {
-            border-right: 8px solid #fff !important;
+            border-right: 8px solid $white !important;
           }
         }
       }
@@ -8431,10 +8418,10 @@ img.mfp-img {
 
         &:hover {
           box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.4);
-          background: #fe4536 !important;
+          background: $primary-color !important;
 
           &::before {
-            border-left: 8px solid #fff !important;
+            border-left: 8px solid $white !important;
           }
         }
       }
@@ -8538,7 +8525,7 @@ img.mfp-img {
 
     & .banner-trend {
       padding: 15px 20px;
-      border-top: 3px solid #84b77c;
+      border-top: 3px solid $secondary-color;
     }
 
     & .banner-look {
