@@ -68,6 +68,7 @@
       - Header
       - Main slider - Carousel
       - Product area
+      - Banners section
     
 */
 
@@ -8489,6 +8490,82 @@ img.mfp-img {
     &.carousel-slider {
       & .control-arrow {
         display: none;
+      }
+    }
+  }
+}
+
+/* ----------------------------------------------
+    - Banners section
+------------------------------------------------- */
+
+@media (max-width: 1400px) {
+  .banner-look {
+    padding: 30px;
+    & > p {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .banner-area {
+    &.box-90 {
+      padding: 40px;
+    }
+
+    & .discover-link,
+    & .theme-btn {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 620px) {
+  .banner-area {
+    &.box-90 {
+      padding: 0px;
+    }
+
+    & .banner-trend,
+    & .banner-look {
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100px;
+      box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.1);
+    }
+
+    & .banner-trend {
+      padding: 15px 20px;
+      border-top: 3px solid #84b77c;
+    }
+
+    & .banner-look {
+      top: auto;
+      width: 100%;
+      padding: 10px 20px;
+
+      & h2 {
+        font-size: 35px;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .banner-area {
+    &.box-90 {
+      padding: 0px;
+    }
+
+    & .banner-trend,
+    & .banner-look {
+      padding: 10px;
+      
+      & a,
+      & h2 {
+        font-size: 25px;
       }
     }
   }
