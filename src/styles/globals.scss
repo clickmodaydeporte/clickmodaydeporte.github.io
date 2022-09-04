@@ -65,6 +65,9 @@
     5 - SLICK SLIDER
     6 - MAGNIFIC POPUP
     7 - MAIN STYLES
+      - Header
+      - Main slider - Carousel
+      - Product area
     
 */
 
@@ -1100,9 +1103,9 @@ a.meanmenu-reveal {
     margin-top: -54px;
     padding: 5px 9px;
     position: absolute;
-    right: 0;
+    right: 10px;
     text-decoration: none;
-    top: 0;
+    top: -5px;
     width: 34px;
 
     & span {
@@ -1163,6 +1166,7 @@ a.meanmenu-reveal {
           border-style: none none solid solid;
           border-width: medium medium 1px 1px;
           font-weight: 700;
+          font-size: 18px;
           height: 27px;
           margin-top: 1px;
           padding: 5px 12px;
@@ -8273,7 +8277,9 @@ img.mfp-img {
 ---------------------------------------------------------
 --------------------------------------------------------- */
 
-// header
+/* ----------------------------------------------
+    - Header
+------------------------------------------------- */
 
 .header-area {
   & .logo {
@@ -8291,6 +8297,10 @@ img.mfp-img {
 
 .header-menu_wrapper {
   height: 100px;
+}
+
+.menu-mobile_wrapper {
+  padding: 0 !important;
 }
 
 .main-menu {
@@ -8332,7 +8342,18 @@ img.mfp-img {
   }
 }
 
-// Main slider - Carousel
+@media (max-width: 380px) {
+  .header-area {
+    &.box-90 {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+  }
+}
+
+/* ----------------------------------------------
+    - Main slider - Carousel
+------------------------------------------------- */
 
 .section-slider {
   position: relative;
@@ -8439,9 +8460,30 @@ img.mfp-img {
     height: 100vh;
     object-fit: cover;
   }
+
+  .carousel {
+    &.carousel-slider {
+      & .control-arrow {
+        width: 60px !important;
+        height: 60px !important;
+      }
+    }
+  }
 }
 
-// product area
+@media (max-width: 580px) {
+  .carousel {
+    &.carousel-slider {
+      & .control-arrow {
+        display: none;
+      }
+    }
+  }
+}
+
+/* ----------------------------------------------
+    - Product area
+------------------------------------------------- */
 
 .product-area {
   & #products-container {
@@ -8454,8 +8496,6 @@ img.mfp-img {
 @media (min-width: 1301px) {
   .product-area {
     & .container-fluid {
-      // margin: 0 90px;
-
       & #products-container {
         & .product-wrapper {
           width: 20%;

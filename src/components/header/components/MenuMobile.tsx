@@ -20,8 +20,7 @@ const MenuMobile: React.FC = () => {
         <a
           onClick={() => handleOpenMenu()}
           href="#nav"
-          className="meanmenu-reveal"
-          style={{ right: "0", left: "auto", top: "-5px" }}>
+          className="meanmenu-reveal">
           <span></span>
           <span></span>
           <span></span>
@@ -59,7 +58,6 @@ const MenuMobile: React.FC = () => {
               </ul>
               <a
                 className="mean-expand"
-                style={{ fontSize: "18px" }}
                 onClick={() => handleOpenSubmenuProducts()}>
                 +
               </a>

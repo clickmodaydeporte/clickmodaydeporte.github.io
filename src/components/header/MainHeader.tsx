@@ -48,7 +48,7 @@ const MainHeader: React.FC = () => {
                 </ul>
               </div>
             </div>
-            <div className="col-12 d-xl-none">
+            <div className="col-12 d-xl-none menu-mobile_wrapper">
               <MenuMobile />
             </div>
           </div>
