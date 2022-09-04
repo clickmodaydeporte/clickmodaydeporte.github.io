@@ -17,7 +17,7 @@ const MainLayout: React.FC<Props> = ({ children }) => {
         backgroundColor: "white",
       }}>
       <Head>
-        <title>Click | Indumentaria y Deporte</title>
+        <title>Click | Moda y Deporte</title>
         <meta
           content="Tiendas cercanas en la ciudad de Mar del Plata"
           name="description"
