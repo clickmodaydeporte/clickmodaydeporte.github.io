@@ -9,7 +9,8 @@ const BannerSection: React.FC = () => {
             <div className="banner-2 pos-relative mb-30">
               <a href="">
                 <img
-                  src="/images/corpofit-banner-1.jpg"
+                  src="/images/click-banner-2.jpg"
+                  // src="https://via.placeholder.com/528x279"
                   alt=""
                 />
               </a>
@@ -32,7 +33,7 @@ const BannerSection: React.FC = () => {
             <div className="banner-2 pos-relative mb-30">
               <a href="">
                 <img
-                  src="/images/corpofit-banner-2.jpg"
+                  src="/images/click-banner-1.jpg"
                   alt=""
                 />
               </a>

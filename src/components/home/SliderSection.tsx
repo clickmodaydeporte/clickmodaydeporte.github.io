@@ -16,7 +16,7 @@ const SliderSection: React.FC = () => {
       >
         <div className="item">
           <img
-            src="/images/click-banner-3.jpg"
+            src="/images/click-slider-3.jpg"
             // src="https://via.placeholder.com/1600x800"
             className="img-responsive"
             alt=""
@@ -49,21 +49,21 @@ const SliderSection: React.FC = () => {
         </div>
         <div className="item">
           <img
-            src="/images/click-banner-4.jpg"
+            src="/images/click-slider-4.jpg"
             className="img-responsive"
             alt=""
           />
         </div>
         <div className="item">
           <img
-            src="/images/click-banner-1.jpg"
+            src="/images/click-slider-1.jpg"
             className="img-responsive"
             alt=""
           />
         </div>
         <div className="item">
           <img
-            src="/images/click-banner-2.jpg"
+            src="/images/click-slider-2.jpg"
             className="img-responsive"
             alt=""
           />
