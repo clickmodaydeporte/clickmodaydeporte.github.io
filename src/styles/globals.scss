@@ -2744,7 +2744,7 @@ label {
 
       & a {
         color: #10111e;
-        font-size: 14px;
+        font-size: 15px;
         line-height: 1;
         font-weight: 500;
         padding: 54px 0;
@@ -8274,6 +8274,15 @@ img.mfp-img {
 --------------------------------------------------------- */
 
 // header
+
+.header-area {
+  & .logo {
+    & > a {
+      position: fixed;
+      top: 15px;
+    }
+  }
+}
 
 .sticky-header {
   box-shadow: 0px 2px 3px #35333394;

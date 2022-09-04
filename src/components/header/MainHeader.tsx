@@ -23,7 +23,6 @@ const MainHeader: React.FC = () => {
 
   return (
     <header
-      id="prueba"
       className={`${
         OnTop ? "transparent-header" : "transparent-header sticky-header"
       }`}>
