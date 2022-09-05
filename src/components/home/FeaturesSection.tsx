@@ -1,4 +1,5 @@
-import { faHomeAlt, faLocationDot, faSackDollar } from "@fortawesome/free-solid-svg-icons";
+import { faSmile } from "@fortawesome/free-regular-svg-icons";
+import { faCommentSms, faHeadset, faHomeAlt, faLocationDot, faSackDollar } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 
@@ -32,14 +33,14 @@ const FeaturesSection: React.FC = () => {
             </div>
             <div className="single-seatures width-20 mb-50 text-center">
               <div className="flaticon-good">
-                <FontAwesomeIcon icon={faHomeAlt} />
+                <FontAwesomeIcon icon={faSmile} />
               </div>
               <span>10 Days</span>
               <h3>For Free Return</h3>
             </div>
             <div className="single-seatures width-20 mb-50 text-center">
               <div className="flaticon-good">
-                <FontAwesomeIcon icon={faHomeAlt} />
+                <FontAwesomeIcon icon={faHeadset} />
               </div>
               <span>Payment</span>
               <h3>Secure System</h3>
