@@ -1,3 +1,5 @@
+import { faHomeAlt, faLocationDot, faSackDollar } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 
 const FeaturesSection: React.FC = () => {
@@ -15,27 +17,37 @@ const FeaturesSection: React.FC = () => {
           </div>
           <div className="features">
             <div className="single-seatures width-20 mb-50 text-center">
-              <i className="flaticon-shopping-cart-1"></i>
+              <div className="flaticon-good">
+                <FontAwesomeIcon icon={faLocationDot} />
+              </div>
               <span>Free Delivery</span>
               <h3>Free Delivery</h3>
             </div>
             <div className="single-seatures width-20 mb-50 text-center">
-              <i className="flaticon-good"></i>
-              <span>100% Customer</span>
+              <div className="flaticon-good">
+                <FontAwesomeIcon icon={faSackDollar} />
+              </div>
+              <span>Payment</span>
               <h3>Feedbacks</h3>
             </div>
             <div className="single-seatures width-20 mb-50 text-center">
-              <i className="flaticon-return-1"></i>
+              <div className="flaticon-good">
+                <FontAwesomeIcon icon={faHomeAlt} />
+              </div>
               <span>10 Days</span>
               <h3>For Free Return</h3>
             </div>
             <div className="single-seatures width-20 mb-50 text-center">
-              <i className="flaticon-return"></i>
+              <div className="flaticon-good">
+                <FontAwesomeIcon icon={faHomeAlt} />
+              </div>
               <span>Payment</span>
               <h3>Secure System</h3>
             </div>
             <div className="single-seatures width-20 mb-50 text-center">
-              <i className="flaticon-customer-service"></i>
+              <div className="flaticon-good">
+                <FontAwesomeIcon icon={faHomeAlt} />
+              </div>
               <span>24/7</span>
               <h3>Online Supports</h3>
             </div>

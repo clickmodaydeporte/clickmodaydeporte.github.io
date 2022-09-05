@@ -1,3 +1,5 @@
+import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useEffect, useState } from "react";
 import LogoDesktop from "./components/LogoDesktop";
 import MainMenu from "./components/MainMenu";
@@ -40,7 +42,7 @@ const MainHeader: React.FC = () => {
                 <ul>
                   <li className="d-shop-cart">
                     <a href="">
-                      <i className="flaticon-shopping-cart"></i>
+                      <FontAwesomeIcon icon={faCartShopping} />
                       <span className="cart-count">3</span>
                     </a>
                     <PopupMinicart />

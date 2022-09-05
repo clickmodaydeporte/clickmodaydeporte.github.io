@@ -73,7 +73,6 @@
     
 */
 
-
 /* ------------------------------------------------------
 ---------------------------------------------------------
     - VARIABLES
@@ -81,7 +80,7 @@
 --------------------------------------------------------- */
 
 $primary-color: #e361b2;
-$secondary-color: #645CAA;
+$secondary-color: #645caa;
 $black: #10111e;
 $total-black: #000000;
 $white: #ffffff;
@@ -3025,8 +3024,8 @@ label {
       position: relative;
 
       & a:hover {
-        background: $primary-color;
-        color: $white;
+        background: $white;
+        box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.1);
       }
     }
   }
@@ -3044,6 +3043,10 @@ label {
         line-height: 50px;
         text-align: center;
         border-radius: 50%;
+
+        & svg {
+          color: $secondary-color;
+        }
       }
     }
   }
@@ -3429,7 +3432,7 @@ ul {
     font-size: 300px;
     color: #ededed;
     font-weight: 600;
-    text-shadow: 2px 2px 10px rgba(0,0,0,0.35);
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.35);
     opacity: 0.9;
   }
 }
@@ -3497,7 +3500,7 @@ ul {
     font-weight: 500;
     margin-bottom: 40px;
     text-transform: capitalize;
-    text-shadow: 2px 2px 4px rgba(107,107,107,0.40);
+    text-shadow: 2px 2px 4px rgba(107, 107, 107, 0.4);
   }
 }
 
@@ -3869,7 +3872,7 @@ ul {
 }
 
 .single-seatures {
-  & i {
+  & .flaticon-good {
     height: 200px;
     width: 200px;
     background: $white;
@@ -8288,7 +8291,7 @@ img.mfp-img {
 }
 
 .sticky-header {
-  box-shadow: 0px 2px 3px rgb(53, 51, 51, 0.30);
+  box-shadow: 0px 2px 3px rgb(53, 51, 51, 0.3);
   z-index: 9999;
 }
 
@@ -8550,7 +8553,7 @@ img.mfp-img {
     & .banner-trend,
     & .banner-look {
       padding: 10px;
-      
+
       & a,
       & h2 {
         font-size: 25px;
