@@ -2444,12 +2444,17 @@ li {
   list-style: none;
 }
 
-p {
+p,
+p > .anchor {
   font-size: 14px;
   font-weight: normal;
   line-height: 26px;
   color: #7e7e7e;
   margin-bottom: 15px;
+}
+
+p > .anchor:hover {
+  color: $primary-color;
 }
 
 hr {
@@ -4853,6 +4858,8 @@ input.main-search-input:-ms-input-placeholder {
 
   & > h1 {
     font-size: 60px;
+    font-weight: 600;
+    letter-spacing: 3px;
     margin-bottom: 30px;
   }
 
@@ -4869,6 +4876,7 @@ input.main-search-input:-ms-input-placeholder {
   padding: 24px 42px;
   background: $white;
   line-height: 1;
+  box-shadow: 0px 2px 3px rgb(53, 51, 51, 0.35);
 
   & li {
     display: inline-block;
@@ -6461,7 +6469,7 @@ p {
   border: 1px solid #eaedff;
   padding: 40px 10px;
 
-  & i {
+  & .icon {
     background: $secondary-color;
     font-size: 40px;
     height: 150px;
@@ -6471,7 +6479,7 @@ p {
     line-height: 135px;
     border: 10px solid $white;
     box-shadow: 0px 16px 32px 0px rgba(206, 226, 255, 0.4);
-    margin-bottom: 30px;
+    margin: 0 auto 30px auto;
   }
 
   & h3 {

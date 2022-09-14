@@ -108,7 +108,7 @@ const MainMenu: React.FC = () => {
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="/contact">
               Contacto
             </a>
           </li>
