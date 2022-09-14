@@ -1,35 +1,11 @@
 import { NextPage } from "next";
 import React from "react";
+import PagesBanner from "../components/PagesBanner";
 
 const Products: NextPage = () => {
   return (
     <main>
-      {/* <!-- breadcrumb-area-start --> */}
-      <section
-        className="breadcrumb-area"
-        data-background="img/bg/page-title.png"
-        style={{ backgroundImage: "url('img/bg/page-title.png')" }}>
-        <div className="container">
-          <div className="row">
-            <div className="col-xl-12">
-              <div className="breadcrumb-text text-center">
-                <h1>Our Shop</h1>
-                <ul className="breadcrumb-menu">
-                  <li>
-                    <a href="http://themepure.net/template/vue/vue/index.html">
-                      home
-                    </a>
-                  </li>
-                  <li>
-                    <span>shop</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      {/* <!-- breadcrumb-area-end --> */}
+      <PagesBanner title="Nuestros Productos" breadcrumb="Productos" />
 
       {/* <!-- shop-area start --> */}
       <section className="shop-area pt-100 pb-100">
