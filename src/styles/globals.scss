@@ -3876,38 +3876,112 @@ ul {
   padding: 0 15px;
 }
 
-.single-seatures {
-  & .flaticon-good {
-    height: 200px;
-    width: 200px;
-    background: $white;
-    color: $primary-color;
-    display: inline-block;
-    text-align: center;
-    font-size: 65px;
-    border-radius: 50%;
-    line-height: 204px;
-  }
+.features {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
 
-  & h3 {
-    font-size: 26px;
-    margin: 0;
-  }
+  & .single-features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
 
-  & span {
-    display: block;
-    font-weight: 500;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: $grey;
-    margin-bottom: 20px;
-    margin-top: 35px;
+    & .flaticon-good {
+      height: 3em;
+      width: 3em;
+      background: $white;
+      color: $primary-color;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 65px;
+      border-radius: 50%;
+      line-height: 204px;
+      box-shadow: 6px 7px 17px -4px rgba(0, 0, 0, 0.05);
+    }
+
+    & h3 {
+      font-size: 26px;
+      margin: 35px 0 20px 0;
+    }
+
+    & span {
+      display: block;
+      font-weight: 500;
+      font-size: 12px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: $grey;
+    }
   }
 }
 
 .service-bg {
   background-repeat: no-repeat;
   background-position: center center;
+}
+
+@media (max-width: 1200px) {
+  .features {
+    & .single-features {
+      & .flaticon-good {
+        width: 2.6em;
+        height: 2.6em;
+        font-size: 45px;
+      }
+
+      & h3 {
+        font-size: 20px;
+        margin: 25px 0 10px 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .features {
+    flex-direction: column;
+
+    & .single-features {
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 25px 0;
+      padding: 0 35px;
+
+      & span {
+        text-align: initial;
+      }
+
+      & .text-container {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .features-area.box-90 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .features {
+    & .single-features {
+      & .flaticon-good {
+        width: 1.7em;
+        height: 1.7em;
+        font-size: 30px;
+      }
+    }
+  }
 }
 
 /* ----------------------------------------------

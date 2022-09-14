@@ -1,5 +1,10 @@
 import { faSmile } from "@fortawesome/free-regular-svg-icons";
-import { faCommentSms, faHeadset, faHomeAlt, faLocationDot, faSackDollar } from "@fortawesome/free-solid-svg-icons";
+import {
+  faHeadset,
+  faHomeAlt,
+  faLocationDot,
+  faSackDollar,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 
@@ -7,50 +12,51 @@ const FeaturesSection: React.FC = () => {
   return (
     <section className="features-area box-90">
       <div className="container-fluid">
-        <div className="theme-soft-bg fix pt-100 pb-50">
+        <div className="theme-soft-bg fix pt-70 pb-50">
           <div className="row">
             <div className="col-xl-12">
               <div className="area-title text-center mb-50">
-                <h2>Special Features</h2>
-                <p>Get special services from our shop.</p>
+                <h2>Servicios</h2>
+                <p>Estos son los servicios que te ofrecemos.</p>
               </div>
             </div>
           </div>
           <div className="features">
-            <div className="single-seatures width-20 mb-50 text-center">
+            <div className="single-features width-20 mb-50 text-center">
               <div className="flaticon-good">
                 <FontAwesomeIcon icon={faLocationDot} />
               </div>
-              <span>Free Delivery</span>
-              <h3>Free Delivery</h3>
-            </div>
-            <div className="single-seatures width-20 mb-50 text-center">
-              <div className="flaticon-good">
-                <FontAwesomeIcon icon={faSackDollar} />
+              <div className="text-container">
+                <h3>Entregas</h3>
+                <span>Coordinamos puntos de entrega.</span>
               </div>
-              <span>Payment</span>
-              <h3>Feedbacks</h3>
             </div>
-            <div className="single-seatures width-20 mb-50 text-center">
+            <div className="single-features width-20 mb-50 text-center">
               <div className="flaticon-good">
                 <FontAwesomeIcon icon={faSmile} />
               </div>
-              <span>10 Days</span>
-              <h3>For Free Return</h3>
+              <div className="text-container">
+                <h3>Seguridad</h3>
+                <span>Compra sencillo, rápido y seguro.</span>
+              </div>
             </div>
-            <div className="single-seatures width-20 mb-50 text-center">
+            <div className="single-features width-20 mb-50 text-center">
+              <div className="flaticon-good">
+                <FontAwesomeIcon icon={faSackDollar} />
+              </div>
+              <div className="text-container">
+                <h3>Métodos de pago</h3>
+                <span>Transferencia, efectivo o mercado pago.</span>
+              </div>
+            </div>
+            <div className="single-features width-20 mb-50 text-center">
               <div className="flaticon-good">
                 <FontAwesomeIcon icon={faHeadset} />
               </div>
-              <span>Payment</span>
-              <h3>Secure System</h3>
-            </div>
-            <div className="single-seatures width-20 mb-50 text-center">
-              <div className="flaticon-good">
-                <FontAwesomeIcon icon={faHomeAlt} />
+              <div className="text-container">
+                <h3>Soporte</h3>
+                <span>Respondemos todas tus dudas.</span>
               </div>
-              <span>24/7</span>
-              <h3>Online Supports</h3>
             </div>
           </div>
         </div>
