@@ -4653,6 +4653,12 @@ h2 {
 .footer-link {
   & li {
     margin-bottom: 15px;
+    display: flex;
+
+    & .icon_container {
+      margin-right: 10px;
+      color: $primary-color;
+    }
 
     &:last-child {
       margin-bottom: 0;

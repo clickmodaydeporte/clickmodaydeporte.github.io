@@ -97,11 +97,11 @@ const MainMenu: React.FC = () => {
               </li>
             </ul>
           </li>
-          <li>
+          {/* <li>
             <a href="">
               Sobre Nosotros
             </a>
-          </li>
+          </li> */}
           <li>
             <a href="">
               Preguntas Frecuentes
