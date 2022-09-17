@@ -68,8 +68,9 @@
     7 - MAIN STYLES
       - Header
       - Main slider - Carousel
-      - Product area
       - Banners section
+      - Product area
+      - Faqs section
     
 */
 
@@ -3877,6 +3878,10 @@ ul {
   padding: 0 15px;
 }
 
+.features-area {
+  margin-bottom: 90px;
+}
+
 .features {
   display: flex;
   flex-direction: row;
@@ -4602,6 +4607,10 @@ h2 {
 /* ----------------------------------------------
     j- Footer
 ------------------------------------------------- */
+
+footer {
+  background-image: url("/images/footer-background-image.jpg");
+}
 
 .footer-logo {
   margin-bottom: 38px;
@@ -8727,5 +8736,97 @@ img.mfp-img {
         width: 100%;
       }
     }
+  }
+}
+
+/* ----------------------------------------------
+    - Faqs section
+------------------------------------------------- */
+
+#frequent-questions {
+  margin: 100px 120px 90px;
+  padding: 0 50px;
+
+  & .accordion {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+  }
+
+  & .accordion__item + .accordion__item {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  & .accordion__button {
+    background-color: #f4f4f4;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+
+    &:hover {
+      background-color: #ddd;
+    }
+
+    &::before {
+      display: inline-block;
+      content: "";
+      height: 10px;
+      width: 10px;
+      margin-right: 12px;
+      border-bottom: 2px solid currentColor;
+      border-right: 2px solid currentColor;
+      transform: rotate(-45deg);
+    }
+
+    &[aria-expanded="true"]::before,
+    &[aria-selected="true"]::before {
+      transform: rotate(45deg);
+    }
+  }
+
+  &[hidden] {
+    display: none;
+  }
+
+  & .accordion__panel {
+    padding: 20px;
+    animation: fadein 0.35s ease-in;
+  }
+
+  /* -------------------------------------------------- */
+  /* ---------------- Animation part ------------------ */
+  /* -------------------------------------------------- */
+
+  @keyframes fadein {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  #frequent-questions {
+    margin: 90px 70px 70px;
+    padding: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  #frequent-questions {
+    margin: 70px 20px;
+    padding: 0;
+  }
+}
+
+@media (max-width: 580px) {
+  #frequent-questions {
+    margin: 50px 5px;
+    padding: 0;
   }
 }

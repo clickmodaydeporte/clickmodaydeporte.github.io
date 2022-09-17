@@ -1,7 +1,7 @@
 import { NextPage } from "next";
 import React from "react";
-import PagesBanner from "../components/PagesBanner";
-import ProductCard from "../components/ProductCard";
+import PagesBanner from "../../components/PagesBanner";
+import ProductCard from "../../components/ProductCard";
 
 const ProductList: NextPage = () => {
   return (
