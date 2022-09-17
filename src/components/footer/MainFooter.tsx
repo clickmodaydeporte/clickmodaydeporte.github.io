@@ -25,32 +25,9 @@ const MainFooter: React.FC = () => {
                 </div>
               </div>
             </div>
-            <div className="col-xl-2 col-lg-2 col-md-3 d-lg-none d-xl-block">
-              <div className="footer-widget pl-50 mb-40">
-                <h3>Nuestras Redes</h3>
-                <ul className="footer-link">
-                  <li>
-                    <div className="icon_container">
-                      <FontAwesomeIcon icon={faFacebookF} />
-                    </div>
-                    <a href="https://www.facebook.com/ClickModayDeporte">
-                      Facebook
-                    </a>
-                  </li>
-                  <li>
-                    <div className="icon_container">
-                      <FontAwesomeIcon icon={faInstagram} />
-                    </div>
-                    <a href="https://www.instagram.com/clickmodaydeporte">
-                      Instagram
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
             <div className="col-xl-2 col-lg-2 col-md-3">
               <div className="footer-widget mb-40">
-                <h3>About</h3>
+                <h3>Click</h3>
                 <ul className="footer-link">
                   <li>
                     <a href="http://themepure.net/template/vue/vue/index-2.html#">
@@ -76,6 +53,29 @@ const MainFooter: React.FC = () => {
                 </ul>
               </div>
             </div>
+            <div className="col-xl-2 col-lg-2 col-md-3 d-lg-none d-xl-block">
+              <div className="footer-widget pl-50 mb-40">
+                <h3>Redes</h3>
+                <ul className="footer-link">
+                  <li>
+                    <div className="icon_container">
+                      <FontAwesomeIcon icon={faFacebookF} />
+                    </div>
+                    <a href="https://www.facebook.com/ClickModayDeporte">
+                      Facebook
+                    </a>
+                  </li>
+                  <li>
+                    <div className="icon_container">
+                      <FontAwesomeIcon icon={faInstagram} />
+                    </div>
+                    <a href="https://www.instagram.com/clickmodaydeporte">
+                      Instagram
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -87,20 +87,18 @@ const MainFooter: React.FC = () => {
                 <div className="copyright text-center text-md-left">
                   <p>
                     Copyright © 2022 by{" "}
-                    <a href="https://naniitevez.github.io/">
-                      Nicole Tevez
-                    </a>
-                    . All Rights Reserved
+                    <a href="https://naniitevez.github.io/">Nicole Tevez</a>.
+                    All Rights Reserved
                   </p>
                 </div>
               </div>
               <div className="col-xl-6 col-lg-6 col-md-5">
                 <div className="footer-icon text-center text-md-right ">
                   <a href="https://www.facebook.com/ClickModayDeporte">
-                  <FontAwesomeIcon icon={faFacebookF} />
+                    <FontAwesomeIcon icon={faFacebookF} />
                   </a>
                   <a href="https://www.instagram.com/clickmodaydeporte">
-                  <FontAwesomeIcon icon={faInstagram} />
+                    <FontAwesomeIcon icon={faInstagram} />
                   </a>
                 </div>
               </div>

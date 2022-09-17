@@ -98,12 +98,12 @@ const MainMenu: React.FC = () => {
             </ul>
           </li>
           <li>
-            <a href="">
+            <a href="/about">
               Sobre Nosotros
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="/frequent-questions">
               Preguntas Frecuentes
             </a>
           </li>
