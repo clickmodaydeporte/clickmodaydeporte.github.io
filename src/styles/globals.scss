@@ -1255,6 +1255,7 @@ a.meanmenu-reveal {
     & a.meanmenu-reveal {
       border: 1px solid $primary-color;
       color: $primary-color;
+      margin-top: 0;
 
       & span {
         background: $primary-color;

@@ -37,7 +37,7 @@ const MainHeader: React.FC = () => {
             <div className="col-xl-9 col-lg-8 col-md-10 col-10 d-none d-xl-block header-menu_wrapper">
               <MainMenu />
             </div>
-            <div className="col-xl-1 col-lg-4 col-md-4 col-3 col-sm-7 pl-0">
+            {/* <div className="col-xl-1 col-lg-4 col-md-4 col-3 col-sm-7 pl-0">
               <div className="header-right f-right">
                 <ul>
                   <li className="d-shop-cart">
@@ -49,7 +49,7 @@ const MainHeader: React.FC = () => {
                   </li>
                 </ul>
               </div>
-            </div>
+            </div> */}
             <div className="col-12 d-xl-none menu-mobile_wrapper">
               <MenuMobile />
             </div>

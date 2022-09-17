@@ -2,7 +2,7 @@ import { NextPage } from "next";
 import React from "react";
 import PagesBanner from "../components/PagesBanner";
 
-const Products: NextPage = () => {
+const ProductList: NextPage = () => {
   return (
     <main>
       <PagesBanner title="Nuestros Productos" breadcrumb="Productos" />
@@ -1319,4 +1319,4 @@ const Products: NextPage = () => {
   );
 };
 
-export default Products;
+export default ProductList;
