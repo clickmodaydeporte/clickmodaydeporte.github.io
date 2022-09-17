@@ -12,7 +12,7 @@ const MainMenu: React.FC = () => {
             </Link>
           </li>
           <li className="mega-menu">
-            <a href="/products">Productos</a>
+            <a href="/product-list">Productos</a>
             <ul className="submenu ">
               <li>
                 <a href="">
