@@ -6,10 +6,10 @@ const ProductsSection: React.FC = () => {
     <section className="product-area pt-70 pb-40">
       <div className="container-fluid">
         <div className="">
-          <div className="col-xl-5 col-lg-12">
-            <div className="area-title mb-50">
-              <h2>Brand New Products</h2>
-              <p>Browse the huge variety of our products</p>
+          <div className="col-lg-12">
+            <div className="area-title">
+              <h2>Nuevos Ingresos!</h2>
+              <p>Estos son son algunos de nuestros productos.</p>
             </div>
           </div>
         </div>

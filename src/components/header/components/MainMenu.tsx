@@ -15,102 +15,66 @@ const MainMenu: React.FC = () => {
             <a href="/product-list">Productos</a>
             <ul className="submenu ">
               <li>
-                <a href="">
-                  Ropa femenina
-                </a>
+                <a href="">Ropa femenina</a>
                 <ul className="submenu  level-1">
                   <li>
-                    <a href="">
-                      Calzas cortas
-                    </a>
+                    <a href="">Calzas cortas</a>
                   </li>
                   <li>
-                    <a href="">
-                      Remeras manga larga
-                    </a>
+                    <a href="">Remeras manga larga</a>
                   </li>
                   <li>
-                    <a href="">
-                      Calzas
-                    </a>
+                    <a href="">Calzas</a>
                   </li>
                   <li>
-                    <a href="">
-                      Remeras
-                    </a>
+                    <a href="">Remeras</a>
                   </li>
                 </ul>
               </li>
               <li>
-                <a href="">
-                  Ropa masculina
-                </a>
+                <a href="">Ropa masculina</a>
                 <ul className="submenu">
                   <li>
-                    <a href="">
-                      Remeras
-                    </a>
+                    <a href="">Remeras</a>
                   </li>
                   <li>
-                    <a href="">
-                     Buzos
-                    </a>
+                    <a href="">Buzos</a>
                   </li>
                   <li>
-                    <a href="">
-                      Camperas
-                    </a>
+                    <a href="">Camperas</a>
                   </li>
                 </ul>
               </li>
               <li>
-                <a href="">
-                  Products Types
-                </a>
+                <a href="">Products Types</a>
                 <ul className="submenu">
                   <li>
-                    <a href="">
-                      Simple Product
-                    </a>
+                    <a href="">Simple Product</a>
                   </li>
                   <li>
-                    <a href="">
-                      Variable Product
-                    </a>
+                    <a href="">Variable Product</a>
                   </li>
                   <li>
-                    <a href="">
-                      Product Upcoming
-                    </a>
+                    <a href="">Product Upcoming</a>
                   </li>
                   <li>
-                    <a href="">
-                      Thumb Top Product
-                    </a>
+                    <a href="">Thumb Top Product</a>
                   </li>
                   <li>
-                    <a href="">
-                      Product Sidebar
-                    </a>
+                    <a href="">Product Sidebar</a>
                   </li>
                 </ul>
               </li>
             </ul>
           </li>
           <li>
-            <a href="/about">
-              Sobre Nosotras
-            </a>
+            <a href="/about">Sobre Nosotras</a>
           </li>
           <li>
-            <a href="/frequent-questions">
-              Preguntas Frecuentes
-            </a>
+            <a href="/frequent-questions">Preguntas Frecuentes</a>
           </li>
           <li>
-            <a href="/contact">
-              Contacto
-            </a>
+            <a href="/contact">Contacto</a>
           </li>
         </ul>
       </nav>

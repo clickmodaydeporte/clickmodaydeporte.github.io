@@ -1,8 +1,17 @@
 import { NextPage } from "next";
-import React from "react";
-import MainImage from "../components/product-detail/MainImage";
+import React, { useEffect, useState } from "react";
+import MainImage from "../../components/product-detail/MainImage";
+import { Product } from "../../interfaces";
+import { getProducts } from "../../services/ProductService";
 
 const ProductDetail: NextPage = () => {
+  const [products, setProducts] = useState<Product[]>()
+
+  useEffect(() => {
+    getProducts()
+      .then(res => setProducts(res))
+  }, [])
+  
   return (
     <main>
       <section className="shop-details-area pt-100 pb-100">
@@ -20,7 +29,7 @@ const ProductDetail: NextPage = () => {
                       href=""
                       role="tab"
                       aria-selected="true">
-                      <img src="/images/click-banner-1.jpg" alt="" />{" "}
+                      <img src="/images/click-banner-1.jpg" alt="" />
                     </a>
                   </li>
                   <li className="nav-item">

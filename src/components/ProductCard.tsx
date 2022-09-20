@@ -9,8 +9,7 @@ const ProductCard: React.FC = () => {
           <img className="secondary-img" src="/images/products/pro16.jpg" />
         </a>
         <div className="sale-tag">
-          <span className="new">new</span>
-          <span className="sale">sale</span>
+          <span className="art">ART 150</span>
         </div>
       </div>
       <div className="product-content">
