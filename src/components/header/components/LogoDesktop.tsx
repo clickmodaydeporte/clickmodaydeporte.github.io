@@ -1,10 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-
-interface LogoDesktopProps {
-  logo: string;
-}
+import { LogoDesktopProps } from "../../../interfaces";
 
 const LogoDesktop: React.FC<LogoDesktopProps> = ({ logo }) => {
   return (

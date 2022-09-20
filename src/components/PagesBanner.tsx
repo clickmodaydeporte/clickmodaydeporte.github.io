@@ -1,9 +1,5 @@
 import React from 'react'
-
-interface PagesBannerProps {
-    title: string;
-    breadcrumb: string;
-}
+import { PagesBannerProps } from '../interfaces';
 
 const PagesBanner: React.FC<PagesBannerProps> = ({title, breadcrumb}) => {
   return (

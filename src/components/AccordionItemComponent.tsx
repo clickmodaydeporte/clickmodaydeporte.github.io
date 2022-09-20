@@ -5,11 +5,7 @@ import {
   AccordionItemButton,
   AccordionItemPanel,
 } from "react-accessible-accordion";
-
-interface AccordionItemComponentprops {
-  question: string;
-  answer: string;
-}
+import { AccordionItemComponentprops } from "../interfaces";
 
 const AccordionItemComponent: React.FC<AccordionItemComponentprops> = ({question, answer}) => {
   return (
