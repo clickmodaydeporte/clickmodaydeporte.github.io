@@ -5,7 +5,7 @@ import PagesBanner from "../components/PagesBanner";
 const About: NextPage = () => {
   return (
     <main>
-      <PagesBanner title="Sobre Nosotras" breadcrumb="sobre nosotras" />
+      <PagesBanner urlImage="/images/about-banner.jpg" title="Sobre Nosotras" breadcrumb="sobre nosotras" />
       <section className="about-area pb-200">
         <div className="container">
           <div className="row">

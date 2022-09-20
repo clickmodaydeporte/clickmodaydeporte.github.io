@@ -11,7 +11,7 @@ import PagesBanner from "../components/PagesBanner";
 const Contact: NextPage = () => {
   return (
     <main>
-      <PagesBanner title="¿Cómo contactarnos?" breadcrumb="Contacto" />
+      <PagesBanner urlImage="/images/pages-banner.jpg" title="¿Cómo contactarnos?" breadcrumb="Contacto" />
 
       <section
         className="contact-area pt-120 pb-90"

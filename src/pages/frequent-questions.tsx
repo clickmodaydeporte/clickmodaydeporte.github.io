@@ -9,7 +9,7 @@ import AccordionItemComponent from "../components/AccordionItemComponent";
 const FrequentQuestions: NextPage = () => {
   return (
     <main>
-      <PagesBanner title="Preguntas Frecuentes" breadcrumb="faqs" />
+      <PagesBanner urlImage="/images/pages-banner.jpg" title="Preguntas Frecuentes" breadcrumb="faqs" />
       <section className="mt-90" id="frequent-questions">
         <Accordion>
           <AccordionItemComponent

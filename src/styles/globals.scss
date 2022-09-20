@@ -1086,8 +1086,8 @@ a.meanmenu-reveal {
   display: none;
 }
 
-.mean-container .mean-bar,
-.mean-container .mean-bar * {
+.mean_container .mean-bar,
+.mean_container .mean-bar * {
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
   box-sizing: content-box;
@@ -1097,9 +1097,9 @@ a.meanmenu-reveal {
   display: none !important;
 }
 
-/* when under viewport size, .mean-container is added to body */
+/* when under viewport size, .mean_container is added to body */
 
-.mean-container {
+.mean_container {
   & .mean-bar {
     background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
     float: left;
@@ -1215,7 +1215,7 @@ a.meanmenu-reveal {
   }
 }
 
-.mean-container {
+.mean_container {
   & .mean-nav ul li {
     & li {
       & a {
@@ -1252,7 +1252,7 @@ a.meanmenu-reveal {
 }
 
 .transparent-header {
-  & .mean-container {
+  & .mean_container {
     & a.meanmenu-reveal {
       border: 1px solid $primary-color;
       color: $primary-color;
@@ -1266,7 +1266,7 @@ a.meanmenu-reveal {
 }
 
 .transparent-header-2 {
-  & .mean-container {
+  & .mean_container {
     & a.meanmenu-reveal {
       border: 1px solid $white;
       color: $white;
@@ -1279,7 +1279,7 @@ a.meanmenu-reveal {
 }
 
 .header-2 {
-  & .mean-container {
+  & .mean_container {
     & a.meanmenu-reveal {
       border: 1px solid $white;
       color: $white;
@@ -3988,7 +3988,7 @@ ul {
         text-align: initial;
       }
 
-      & .text-container {
+      & .text_container {
         width: 60%;
         display: flex;
         flex-direction: column;
@@ -4368,10 +4368,6 @@ h2 {
 ------------------------------------------------- */
 
 .area-title {
-  margin: 0 100px 50px;
-  border-bottom: 1px solid $primary-color;
-  box-shadow: 0px 16px 32px 0px rgba(224, 226, 255, 0.4);
-
   & h2 {
     font-size: 40px;
     margin-bottom: 10px;
@@ -4386,6 +4382,12 @@ h2 {
   p {
     margin: 0;
   }
+}
+
+.area-title.new-products {
+  margin: 0 100px 50px;
+  border-bottom: 1px solid $primary-color;
+  box-shadow: 0px 16px 32px 0px rgba(224, 226, 255, 0.4);
 }
 
 /* ----------------------------------------------
@@ -4643,6 +4645,10 @@ footer {
   background-image: url("/images/footer-background-image.jpg");
 }
 
+.footer-logo_container {
+  margin-right: 50px;
+}
+
 .footer-logo {
   margin-bottom: 38px;
 }
@@ -4653,6 +4659,7 @@ footer {
     margin-bottom: 40px;
     line-height: 1;
     text-transform: capitalize;
+    text-decoration: underline;
   }
 
   & p {
@@ -8005,7 +8012,7 @@ ul {
   -webkit-backface-visibility: hidden;
 }
 
-.mfp-container {
+.mfp_container {
   text-align: center;
   position: absolute;
   width: 100%;
@@ -8016,14 +8023,14 @@ ul {
   box-sizing: border-box;
 }
 
-.mfp-container:before {
+.mfp_container:before {
   content: "";
   display: inline-block;
   height: 100%;
   vertical-align: middle;
 }
 
-.mfp-align-top .mfp-container:before {
+.mfp-align-top .mfp_container:before {
   display: none;
 }
 
@@ -8396,7 +8403,7 @@ img.mfp-img {
     -webkit-transform-origin: 100%;
     transform-origin: 100%;
   }
-  .mfp-container {
+  .mfp_container {
     padding-left: 6px;
     padding-right: 6px;
   }
@@ -8704,7 +8711,7 @@ img.mfp-img {
 ------------------------------------------------- */
 
 .product-area {
-  & #products-container {
+  & #products_container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -8714,7 +8721,7 @@ img.mfp-img {
 @media (min-width: 1301px) {
   .product-area {
     & .container-fluid {
-      & #products-container {
+      & #products_container {
         & .product-wrapper {
           width: 20%;
           margin-left: 15px;
@@ -8727,7 +8734,7 @@ img.mfp-img {
 
 @media (max-width: 1300px) {
   .product-area {
-    & #products-container {
+    & #products_container {
       justify-content: center;
 
       & .product-wrapper {
@@ -8741,7 +8748,7 @@ img.mfp-img {
 
 @media (min-width: 769px) and (max-width: 991px) {
   .product-area {
-    & #products-container {
+    & #products_container {
       & .product-wrapper {
         width: 30%;
         margin-left: 10px;
@@ -8753,7 +8760,7 @@ img.mfp-img {
 
 @media (min-width: 561px) and (max-width: 768px) {
   .product-area {
-    & #products-container {
+    & #products_container {
       & .product-wrapper {
         width: 45%;
         margin-left: 5px;
@@ -8765,7 +8772,7 @@ img.mfp-img {
 
 @media (max-width: 560px) {
   .product-area {
-    & #products-container {
+    & #products_container {
       padding-left: 20px;
       padding-right: 20px;
 

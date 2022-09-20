@@ -26,7 +26,7 @@ const FeaturesSection: React.FC = () => {
               <div className="flaticon-good">
                 <FontAwesomeIcon icon={faLocationDot} />
               </div>
-              <div className="text-container">
+              <div className="text_container">
                 <h3>Entregas</h3>
                 <span>Coordinamos puntos de entrega.</span>
               </div>
@@ -35,7 +35,7 @@ const FeaturesSection: React.FC = () => {
               <div className="flaticon-good">
                 <FontAwesomeIcon icon={faSmile} />
               </div>
-              <div className="text-container">
+              <div className="text_container">
                 <h3>Seguridad</h3>
                 <span>Compra sencillo, rápido y seguro.</span>
               </div>
@@ -44,7 +44,7 @@ const FeaturesSection: React.FC = () => {
               <div className="flaticon-good">
                 <FontAwesomeIcon icon={faSackDollar} />
               </div>
-              <div className="text-container">
+              <div className="text_container">
                 <h3>Métodos de pago</h3>
                 <span>Transferencia, efectivo o mercado pago.</span>
               </div>
@@ -53,7 +53,7 @@ const FeaturesSection: React.FC = () => {
               <div className="flaticon-good">
                 <FontAwesomeIcon icon={faHeadset} />
               </div>
-              <div className="text-container">
+              <div className="text_container">
                 <h3>Soporte</h3>
                 <span>Respondemos todas tus dudas.</span>
               </div>

@@ -1,5 +1,6 @@
 import { faFacebookF, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Link from "next/link";
 import React from "react";
 
 const MainFooter: React.FC = () => {
@@ -9,19 +10,11 @@ const MainFooter: React.FC = () => {
         <div className="container-fluid">
           <div className="row">
             <div className="col-xl-3 col-lg-5 col-md-6 ">
-              <div className="footer-widget mb-40">
+              <div className="footer-widget mb-40 footer-logo_container">
                 <div className="footer-logo">
                   <a href="/">
                     <img src="/images/Click-logo.png" alt="" />
                   </a>
-                </div>
-                <div className="footer-time d-flex mt-30">
-                  <div className="time-icon">
-                    <img
-                      src="./Vue - Clean Minimal eCommerce HTML Template_files/time.png"
-                      alt=""
-                    />
-                  </div>
                 </div>
               </div>
             </div>
@@ -30,25 +23,24 @@ const MainFooter: React.FC = () => {
                 <h3>Click</h3>
                 <ul className="footer-link">
                   <li>
-                    <a href="http://themepure.net/template/vue/vue/index-2.html#">
-                      Terms &amp; Conditions
-                    </a>
+                    <Link href="/product-list">
+                      <a>Nuestros Productos</a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="http://themepure.net/template/vue/vue/index-2.html#">
-                      {" "}
-                      Privacy Policy
-                    </a>
+                    <Link href="/about">
+                      <a>Sobre Nosotras</a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="http://themepure.net/template/vue/vue/index-2.html#">
-                      Contacto
-                    </a>
+                    <Link href="/frequent-questions">
+                      <a>Preguntas Frecuentes</a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="http://themepure.net/template/vue/vue/index-2.html#">
-                      Preguntas Frecuentes
-                    </a>
+                    <Link href="/contact">
+                      <a>Contacto</a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -88,7 +80,7 @@ const MainFooter: React.FC = () => {
                   <p>
                     Copyright © 2022 by{" "}
                     <a href="https://naniitevez.github.io/">Nicole Tevez</a>.
-                    All Rights Reserved
+                    All Rights Reserved. Click Moda y Deporte.
                   </p>
                 </div>
               </div>

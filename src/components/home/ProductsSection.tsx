@@ -7,14 +7,14 @@ const ProductsSection: React.FC = () => {
       <div className="container-fluid">
         <div className="">
           <div className="col-lg-12">
-            <div className="area-title">
+            <div className="area-title new-products">
               <h2>Nuevos Ingresos!</h2>
               <p>Estos son son algunos de nuestros productos.</p>
             </div>
           </div>
         </div>
         <div className="">
-          <div id="products-container" className="">
+          <div id="products_container" className="">
               <ProductCard />
               <ProductCard />
               <ProductCard />

@@ -15,7 +15,7 @@ const MenuMobile: React.FC = () => {
   };
 
   return (
-    <div className="mobile-menu mean-container">
+    <div className="mobile-menu mean_container">
       <div className="mean-bar">
         <a
           onClick={() => handleOpenMenu()}

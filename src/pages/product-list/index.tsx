@@ -6,7 +6,7 @@ import ProductCard from "../../components/ProductCard";
 const ProductList: NextPage = () => {
   return (
     <main>
-      <PagesBanner title="Nuestros Productos" breadcrumb="Productos" />
+      <PagesBanner urlImage="/images/pages-banner.jpg" title="Nuestros Productos" breadcrumb="Productos" />
 
       {/* <!-- shop-area start --> */}
       <section className="shop-area pt-100 pb-100">
