@@ -15,12 +15,12 @@ const ProductsSection: React.FC = () => {
         </div>
         <div className="">
           <div id="products_container" className="">
+              {/* <ProductCard />
               <ProductCard />
               <ProductCard />
               <ProductCard />
               <ProductCard />
-              <ProductCard />
-              <ProductCard />
+              <ProductCard /> */}
           </div>
         </div>
       </div>

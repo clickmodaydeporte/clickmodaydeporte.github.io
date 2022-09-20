@@ -13,6 +13,10 @@ export interface LogoDesktopProps {
   logo: string;
 }
 
+export interface ProductCard {
+  product: Product;
+}
+
 export interface Product {
   slug: string;
   name: string;

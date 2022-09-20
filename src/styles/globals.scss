@@ -4021,6 +4021,10 @@ ul {
     f- Product
 ------------------------------------------------- */
 
+.product-card-anchor:hover {
+  text-decoration: none;
+}
+
 .box-90 {
   padding-left: 90px;
   padding-right: 90px;
@@ -4144,13 +4148,20 @@ img {
   position: relative;
   padding-right: 50px;
 
+  & a:hover {
+    text-decoration: none;
+  }
+
   & h4 {
     font-size: 20px;
     margin-bottom: 15px;
 
     & a {
+      color: $black;
+
       &:hover {
         color: $primary-color;
+        text-decoration: none;
       }
     }
   }
@@ -4172,9 +4183,13 @@ img {
 .pro-price {
   & span {
     font-weight: 500;
-    font-size: 14px;
+    font-size: 18px;
     color: $grey;
     margin-right: 25px;
+
+    &:hover {
+      text-decoration: none;
+    }
 
     &.old-price {
       color: #bcbdce;
