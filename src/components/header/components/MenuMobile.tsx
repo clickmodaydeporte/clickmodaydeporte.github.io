@@ -64,7 +64,7 @@ const MenuMobile: React.FC = () => {
             </li>
             <li>
               <Link href="/">
-                <a>Sobbre Nosotros</a>
+                <a>Sobbre Nosotras</a>
               </Link>
             </li>
             <li>

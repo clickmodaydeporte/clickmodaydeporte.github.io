@@ -99,7 +99,7 @@ const MainMenu: React.FC = () => {
           </li>
           <li>
             <a href="/about">
-              Sobre Nosotros
+              Sobre Nosotras
             </a>
           </li>
           <li>
