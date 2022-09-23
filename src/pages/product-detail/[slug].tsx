@@ -1,6 +1,7 @@
 import { NextPage } from "next";
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
+import { IMG_URL } from "../../appConf";
 import MainImage from "../../components/product-detail/MainImage";
 import { Product } from "../../interfaces";
 import { getProducts } from "../../services/ProductService";
@@ -23,10 +24,22 @@ const ProductDetail: NextPage = () => {
       <section className="shop-details-area pt-100 pb-100">
         <div className="container">
           <div className="row">
-            <div className="col-xl-6 col-lg-4">
-              <MainImage activeImage={activeImage} />
+            <div className="col-xl-6 col-lg-8">
+              <MainImage
+                activeImage={activeImage}
+                imageID1={productDetail?.imageID1}
+                imageID2={productDetail?.imageID2}
+                imageID3={productDetail?.imageID3}
+                imageID4={productDetail?.imageID4}
+                imageID5={productDetail?.imageID5}
+                altImage1={productDetail?.altImage1!}
+                altImage2={productDetail?.altImage2!}
+                altImage3={productDetail?.altImage3!}
+                altImage4={productDetail?.altImage4!}
+                altImage5={productDetail?.altImage5!}
+              />
               <div className="shop-thumb-tab mb-30">
-                <ul className="nav" id="myTab2" role="tablist">
+                <ul className="nav" id="images-list" role="tablist">
                   <li
                     className="nav-item"
                     onClick={() => setActiveImage("product-image1")}>
@@ -36,89 +49,98 @@ const ProductDetail: NextPage = () => {
                       data-toggle="tab"
                       role="tab"
                       aria-selected="true">
-                      <img src="/images/click-banner-1.jpg" alt="" />
+                      <img src={IMG_URL + productDetail?.imageID1} alt="" />
                     </div>
                   </li>
-                  <li
-                    className="nav-item"
-                    onClick={() => setActiveImage("product-image2")}>
-                    <div
-                      className="nav-link"
-                      id="product-image2"
-                      data-toggle="tab"
-                      role="tab"
-                      aria-selected="false">
-                      <img src="/images/click-slider-1.jpg" alt="" />
-                    </div>
-                  </li>
-                  <li
-                    className="nav-item"
-                    onClick={() => setActiveImage("product-image3")}>
-                    <div
-                      className="nav-link"
-                      id="product-image3"
-                      data-toggle="tab"
-                      role="tab"
-                      aria-selected="false">
-                      <img src="/images/click-slider-2.jpg" alt="" />
-                    </div>
-                  </li>
-                  <li
-                    className="nav-item"
-                    onClick={() => setActiveImage("product-image4")}>
-                    <div
-                      className="nav-link"
-                      id="product-image4"
-                      data-toggle="tab"
-                      role="tab"
-                      aria-selected="false">
-                      <img src="/images/click-slider-2.jpg" alt="" />
-                    </div>
-                  </li>
-                  <li
-                    className="nav-item"
-                    onClick={() => setActiveImage("product-image5")}>
-                    <div
-                      className="nav-link"
-                      id="product-image5"
-                      data-toggle="tab"
-                      role="tab"
-                      aria-selected="false">
-                      <img src="/images/click-slider-2.jpg" alt="" />
-                    </div>
-                  </li>
+                  {productDetail?.imageID2 !== "#N/A" && (
+                    <li
+                      className="nav-item"
+                      onClick={() => setActiveImage("product-image2")}>
+                      <div
+                        className="nav-link"
+                        id="product-image2"
+                        data-toggle="tab"
+                        role="tab"
+                        aria-selected="false">
+                        <img src={IMG_URL + productDetail?.imageID2} alt="" />
+                      </div>
+                    </li>
+                  )}
+                  {productDetail?.imageID3 !== "#N/A" && (
+                    <li
+                      className="nav-item"
+                      onClick={() => setActiveImage("product-image3")}>
+                      <div
+                        className="nav-link"
+                        id="product-image3"
+                        data-toggle="tab"
+                        role="tab"
+                        aria-selected="false">
+                        <img src={IMG_URL + productDetail?.imageID3} alt="" />
+                      </div>
+                    </li>
+                  )}
+                  {productDetail?.imageID4 !== "#N/A" && (
+                    <li
+                      className="nav-item"
+                      onClick={() => setActiveImage("product-image4")}>
+                      <div
+                        className="nav-link"
+                        id="product-image4"
+                        data-toggle="tab"
+                        role="tab"
+                        aria-selected="false">
+                        <img src={IMG_URL + productDetail?.imageID4} alt="" />
+                      </div>
+                    </li>
+                  )}
+                  {productDetail?.imageID5 !== "#N/A" && (
+                    <li
+                      className="nav-item"
+                      onClick={() => setActiveImage("product-image5")}>
+                      <div
+                        className="nav-link"
+                        id="product-image5"
+                        data-toggle="tab"
+                        role="tab"
+                        aria-selected="false">
+                        <img src={IMG_URL + productDetail?.imageID5} alt="" />
+                      </div>
+                    </li>
+                  )}
                 </ul>
               </div>
             </div>
-            <div className="col-xl-6 col-lg-8">
+            <div className="col-xl-6 col-lg-4">
               <div className="product-details mb-30 pl-30">
                 <div className="details-cat mb-20">
-                  <a href="">decor,</a>
-                  <a href="">furniture</a>
+                  <a href="">{productDetail?.category}</a>
                 </div>
                 <h2 className="pro-details-title mb-15">
-                  Limonda Women Winter Cloth
+                  {productDetail?.name}
                 </h2>
                 <div className="details-price mb-20">
-                  <span>$119.00</span>
+                  <span>{productDetail?.price}</span>
                 </div>
                 <div className="product-variant">
                   <div className="product-info-list variant-item">
                     <ul>
-                      <li>
-                        <span>Colores:</span> Rojo, negro y fucsia
+                      <li className="article-number_container">
+                        <span>Nro ART:</span>{" "}
+                        <div className="nro-art">{productDetail?.art}</div>
                       </li>
-                      <li>
-                        <span>ART:</span> d12
-                      </li>
-                      <li>
-                        <span>Stock:</span>{" "}
-                        <span className="in-stock">Por pedido</span>
+                      <li className="product-stock_container">
+                        <span>Stock:</span>
+                        <span className="in-stock">
+                          {productDetail?.stock
+                            ? "Entrega Inmediata"
+                            : "Pedido por Catalogo"}
+                        </span>
                       </li>
                     </ul>
                   </div>
-                  <div>
-                    Metodos de pago, 10% de descuento pagando en efectivo
+                  <div className="payment-methods_container">
+                    <p>Medios de pago: efectivo, MercadoPago o Transferencia bancaria.</p>
                   </div>
                 </div>
               </div>

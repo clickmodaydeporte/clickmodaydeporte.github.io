@@ -27,14 +27,14 @@ export interface Product extends ProductDetailImages {
 }
 
 export interface ProductDetailImages {
-  imageID1: string;
+  imageID1: string | undefined;
   altImage1: string;
-  imageID2: string;
+  imageID2: string | undefined;
   altImage2: string;
-  imageID3: string;
+  imageID3: string | undefined;
   altImage3: string;
-  imageID4: string;
+  imageID4: string | undefined;
   altImage4: string;
-  imageID5: string;
+  imageID5: string | undefined;
   altImage5: string;
 }
