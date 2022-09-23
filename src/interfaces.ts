@@ -17,13 +17,16 @@ export interface ProductCard {
   product: Product;
 }
 
-export interface Product {
+export interface Product extends ProductDetailImages {
   slug: string;
   name: string;
   art: number;
   price: string;
   category: string;
   stock: boolean;
+}
+
+export interface ProductDetailImages {
   imageID1: string;
   altImage1: string;
   imageID2: string;

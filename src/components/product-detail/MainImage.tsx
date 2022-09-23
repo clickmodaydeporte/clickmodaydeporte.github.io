@@ -19,6 +19,16 @@ const MainImage: React.FC = () => {
             <img src="/images/click-slider-2.jpg" alt="" />
           </div>
         </div>
+        <div className="tab-pane fade" id="profile1" role="tabpanel">
+          <div className="product-large-img">
+            <img src="/images/click-slider-2.jpg" alt="" />
+          </div>
+        </div>
+        <div className="tab-pane fade" id="profile1" role="tabpanel">
+          <div className="product-large-img">
+            <img src="/images/click-slider-2.jpg" alt="" />
+          </div>
+        </div>
       </div>
     </div>
   );

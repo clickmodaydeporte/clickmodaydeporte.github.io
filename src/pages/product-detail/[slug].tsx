@@ -1,17 +1,22 @@
 import { NextPage } from "next";
+import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 import MainImage from "../../components/product-detail/MainImage";
 import { Product } from "../../interfaces";
 import { getProducts } from "../../services/ProductService";
 
 const ProductDetail: NextPage = () => {
-  const [products, setProducts] = useState<Product[]>()
+  const [productDetail, setProductDetail] = useState<Product>();
+  const router = useRouter();
+  const { slug } = router.query;
 
   useEffect(() => {
-    getProducts()
-      .then(res => setProducts(res))
-  }, [])
-  
+    getProducts().then((response) => {
+      const prodDetail = response.filter((res) => res.slug === slug);
+      setProductDetail(prodDetail[0]);
+    });
+  }, []);
+
   return (
     <main>
       <section className="shop-details-area pt-100 pb-100">
@@ -41,6 +46,28 @@ const ProductDetail: NextPage = () => {
                       role="tab"
                       aria-selected="false">
                       <img src="/images/click-slider-1.jpg" alt="" />
+                    </a>
+                  </li>
+                  <li className="nav-item">
+                    <a
+                      className="nav-link"
+                      id="profile-tab2"
+                      data-toggle="tab"
+                      href=""
+                      role="tab"
+                      aria-selected="false">
+                      <img src="/images/click-slider-2.jpg" alt="" />
+                    </a>
+                  </li>
+                  <li className="nav-item">
+                    <a
+                      className="nav-link"
+                      id="profile-tab2"
+                      data-toggle="tab"
+                      href=""
+                      role="tab"
+                      aria-selected="false">
+                      <img src="/images/click-slider-2.jpg" alt="" />
                     </a>
                   </li>
                   <li className="nav-item">
