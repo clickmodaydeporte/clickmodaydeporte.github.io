@@ -6,8 +6,21 @@ import FeaturesSection from "../components/home/FeaturesSection";
 import ProductsSection from "../components/home/ProductsSection";
 import SearchFullscreen from "../components/SearchFullscreen";
 import CategorySection from "../components/home/CategorySection";
+import { useEffect, useState } from "react";
+import { Product } from "../interfaces";
+import { getProducts } from "../services/ProductService";
+import { getNewProducts } from "../utils/utils";
 
 const Home: NextPage = () => {
+  const [newProducts, setNewProducts] = useState<Product[]>([]);
+
+  useEffect(() => {
+    getProducts().then(response => {
+      const products = getNewProducts(response)
+      setNewProducts(products)
+  })
+  }, [])
+
   return (
     <div>
       <Head>
@@ -23,7 +36,7 @@ const Home: NextPage = () => {
 
         <CategorySection />
 
-        <ProductsSection />
+        <ProductsSection {...newProducts} />
 
         <FeaturesSection />
 

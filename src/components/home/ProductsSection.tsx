@@ -1,7 +1,10 @@
 import React from "react";
+import { Product } from "../../interfaces";
 import ProductCard from "../ProductCard";
 
-const ProductsSection: React.FC = () => {
+const ProductsSection: React.FC<Product[]> = (newProducts) => {
+  const products = Object.values(newProducts);
+
   return (
     <section className="product-area pt-70 pb-40">
       <div className="container-fluid">
@@ -14,13 +17,14 @@ const ProductsSection: React.FC = () => {
           </div>
         </div>
         <div className="">
-          <div id="products_container" className="">
-              {/* <ProductCard />
-              <ProductCard />
-              <ProductCard />
-              <ProductCard />
-              <ProductCard />
-              <ProductCard /> */}
+          <div id="products_container" className="row">
+            {products.map((product) => {
+              return (
+                <div className="product-card_container col-lg-3 col-md-5">
+                  <ProductCard key={product.art} product={product} />
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>
