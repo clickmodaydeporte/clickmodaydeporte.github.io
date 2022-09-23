@@ -1,4 +1,5 @@
 import { NextPage } from "next";
+import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 import PagesBanner from "../../components/PagesBanner";
 import ProductCard from "../../components/ProductCard";
@@ -7,10 +8,21 @@ import { getProducts } from "../../services/ProductService";
 
 const ProductList: NextPage = () => {
   const [products, setProducts] = useState<Product[]>([]);
+  const router = useRouter();
+  const { category } = router.query;
 
   useEffect(() => {
-    getProducts().then((res) => setProducts(res));
-  }, []);
+    getProducts().then((response) => {
+      if (category === "all-products") {
+        setProducts(response);
+      } else {
+        const categoryFilter = response.filter(
+          (res) => res.categoryRoute === category
+        );
+        setProducts(categoryFilter);
+      }
+    });
+  }, [category]);
 
   return (
     <main>

@@ -26,6 +26,7 @@ function dataFilter(data: any): Product[] {
   for (let i = 1; i < data.length; i++) {
     dataFiltered.push({
       slug: convertToSlug(data[i][0]),
+      categoryRoute: convertToSlug(data[i][3]),
       name: data[i][0],
       art: parseInt(data[i][1]),
       price: data[i][2],

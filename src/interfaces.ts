@@ -19,6 +19,7 @@ export interface ProductCard {
 
 export interface Product extends ProductDetailImages {
   slug: string;
+  categoryRoute: string;
   name: string;
   art: number;
   price: string;

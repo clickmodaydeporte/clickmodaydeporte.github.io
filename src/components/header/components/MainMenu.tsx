@@ -12,7 +12,7 @@ const MainMenu: React.FC = () => {
             </Link>
           </li>
           <li className="mega-menu">
-            <Link href="/product-list">
+            <Link href="/product-list/all-products">
               <a>Productos</a>
             </Link>
             <ul className="submenu ">
@@ -20,22 +20,22 @@ const MainMenu: React.FC = () => {
                 <span>Nuestros Productos</span>
                 <ul className="submenu  level-1">
                   <li>
-                    <Link href="">
+                    <Link href="/product-list/ropa-casual">
                       <a>Ropa casual</a>
                     </Link>
                   </li>
                   <li>
-                    <Link href="">
+                    <Link href="/product-list/ropa-deportiva">
                       <a>Ropa deportiva</a>
                     </Link>
                   </li>
                   <li>
-                    <Link href="">
+                    <Link href="/product-list/accesorios">
                       <a>Accesorios</a>
                     </Link>
                   </li>
                   <li>
-                    <Link href="">
+                    <Link href="/product-list/otros">
                       <a>Otros</a>
                     </Link>
                   </li>
