@@ -2856,7 +2856,8 @@ label {
     & li {
       &.mega-menu {
         & > ul.submenu {
-          min-width: 800px;
+          min-width: 150px;
+          width: 150px;
           opacity: 0;
           visibility: hidden;
           padding: 35px;
@@ -2900,13 +2901,15 @@ label {
               padding-right: 0px;
             }
 
-            & > a {
+            & > span {
               font-size: 12px;
               line-height: inherit;
               font-weight: 600;
               color: $black;
               padding: 0;
               text-transform: uppercase;
+              padding-bottom: 5px;
+              border-bottom: 2px solid $secondary-color;
             }
           }
         }

@@ -17,53 +17,27 @@ const MainMenu: React.FC = () => {
             </Link>
             <ul className="submenu ">
               <li>
-                <a href="">Ropa femenina</a>
+                <span>Nuestros Productos</span>
                 <ul className="submenu  level-1">
                   <li>
-                    <a href="">Calzas cortas</a>
+                    <Link href="">
+                      <a>Ropa casual</a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="">Remeras manga larga</a>
+                    <Link href="">
+                      <a>Ropa deportiva</a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="">Calzas</a>
+                    <Link href="">
+                      <a>Accesorios</a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="">Remeras</a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a href="">Ropa masculina</a>
-                <ul className="submenu">
-                  <li>
-                    <a href="">Remeras</a>
-                  </li>
-                  <li>
-                    <a href="">Buzos</a>
-                  </li>
-                  <li>
-                    <a href="">Camperas</a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a href="">Products Types</a>
-                <ul className="submenu">
-                  <li>
-                    <a href="">Simple Product</a>
-                  </li>
-                  <li>
-                    <a href="">Variable Product</a>
-                  </li>
-                  <li>
-                    <a href="">Product Upcoming</a>
-                  </li>
-                  <li>
-                    <a href="">Thumb Top Product</a>
-                  </li>
-                  <li>
-                    <a href="">Product Sidebar</a>
+                    <Link href="">
+                      <a>Otros</a>
+                    </Link>
                   </li>
                 </ul>
               </li>
