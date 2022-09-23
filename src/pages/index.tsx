@@ -5,6 +5,7 @@ import BannerSection from "../components/home/BannerSection";
 import FeaturesSection from "../components/home/FeaturesSection";
 import ProductsSection from "../components/home/ProductsSection";
 import SearchFullscreen from "../components/SearchFullscreen";
+import CategorySection from "../components/home/CategorySection";
 
 const Home: NextPage = () => {
   return (
@@ -20,7 +21,7 @@ const Home: NextPage = () => {
           <SliderSection />
         </section>
 
-        <BannerSection />
+        <CategorySection />
 
         <ProductsSection />
 

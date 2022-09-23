@@ -69,6 +69,7 @@
       - Header
       - Main slider - Carousel
       - Banners section
+      - Categories section
       - Product area
       - Faqs section
     
@@ -8718,6 +8719,114 @@ img.mfp-img {
         font-size: 25px;
       }
     }
+  }
+}
+
+/* ----------------------------------------------
+    - Categories section
+------------------------------------------------- */
+
+.category-area {
+  padding: 0 90px;
+}
+
+.banner {
+  & .category-title {
+    position: absolute;
+    width: 95%;
+    background: rgba(255, 255, 255, 0.5);
+    z-index: 100;
+
+    & h3 {
+      padding-left: 15px;
+      margin: 5px 0;
+      color: $white;
+      text-shadow: 1px 1px 2px $black;
+    }
+  }
+
+  &.casual-category,
+  &.accessories-category,
+  &.sport-category,
+  &.other-category {
+    & > img {
+      width: 100%;
+    }
+  }
+
+  &.casual-category {
+    max-height: 300px;
+  }
+
+  &.accessories-category {
+    height: 200px;
+  }
+
+  &.sport-category,
+  &.other-category {
+    height: 530px;
+  }
+
+  &.other-category {
+    & > img {
+      height: 100%;
+      object-fit: none;
+    }
+  }
+}
+
+@media (max-width: 1300px) {
+  .banner {
+    &.sport-category {
+      & > img {
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &.casual-category {
+      height: 100%;
+
+      & > img {
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &.accessories-category {
+      & > img {
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .banner {
+    &.casual-category {
+      & > img {
+        object-position: top;
+      }
+    }
+
+    &.sport-category {
+      & > img {
+        object-position: top;
+      }
+    }
+
+    &.sport-category,
+    &.accessories-category,
+    &.other-category {
+      height: 300px;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .category-area {
+    padding: 0 15px;
   }
 }
 
