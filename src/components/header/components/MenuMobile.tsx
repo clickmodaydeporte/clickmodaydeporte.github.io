@@ -1,10 +1,17 @@
 import Link from "next/link";
-import React, { useState } from "react";
+import { useRouter } from "next/router";
+import React, { useEffect, useState } from "react";
 
 const MenuMobile: React.FC = () => {
   const [openMenu, setOpenMenu] = useState<boolean>(false);
   const [openSubmenuProducts, setOpenSubmenuProducts] =
     useState<boolean>(false);
+  const router = useRouter();
+  const { pathname } = router;
+
+  useEffect(() => {
+    handleOpenMenu();
+  }, [pathname]);
 
   const handleOpenMenu = () => {
     setOpenMenu(!openMenu);
@@ -17,10 +24,7 @@ const MenuMobile: React.FC = () => {
   return (
     <div className="mobile-menu mean_container">
       <div className="mean-bar">
-        <a
-          onClick={() => handleOpenMenu()}
-          href="#nav"
-          className="meanmenu-reveal">
+        <a onClick={() => handleOpenMenu()} className="meanmenu-reveal">
           <span></span>
           <span></span>
           <span></span>
@@ -33,7 +37,7 @@ const MenuMobile: React.FC = () => {
               </Link>
             </li>
             <li>
-              <Link href="/">
+              <Link href="/product-list/all-products">
                 <a>Productos</a>
               </Link>
               <ul
@@ -41,18 +45,23 @@ const MenuMobile: React.FC = () => {
                   openSubmenuProducts ? "" : "display-none"
                 }`}>
                 <li>
-                  <Link href="/">
-                    <a>Ropa femenina</a>
+                  <Link href="/product-list/ropa-casual">
+                    <a>Ropa casual</a>
                   </Link>
                 </li>
                 <li>
-                  <Link href="/">
-                    <a>Ropa masculina</a>
+                  <Link href="/product-list/ropa-deportiva">
+                    <a>Ropa deportiva</a>
                   </Link>
                 </li>
                 <li>
-                  <Link href="/">
-                    <a>Products Types</a>
+                  <Link href="/product-list/accesorios">
+                    <a>Accesorios</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/product-list/otros">
+                    <a>Otros</a>
                   </Link>
                 </li>
               </ul>
@@ -63,17 +72,17 @@ const MenuMobile: React.FC = () => {
               </a>
             </li>
             <li>
-              <Link href="/">
+              <Link href="/about">
                 <a>Sobbre Nosotras</a>
               </Link>
             </li>
             <li>
-              <Link href="/">
+              <Link href="/frequent-questions">
                 <a>Preguntas Frecuentes</a>
               </Link>
             </li>
             <li>
-              <Link href="/">
+              <Link href="/contact">
                 <a>Contacto</a>
               </Link>
             </li>
