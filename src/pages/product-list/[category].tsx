@@ -5,6 +5,7 @@ import PagesBanner from "../../components/PagesBanner";
 import ProductCard from "../../components/ProductCard";
 import { Product } from "../../interfaces";
 import { getProducts } from "../../services/ProductService";
+import { categoryFilter } from "../../utils/utils";
 
 const ProductList: NextPage = () => {
   const [products, setProducts] = useState<Product[]>([]);
@@ -13,14 +14,8 @@ const ProductList: NextPage = () => {
 
   useEffect(() => {
     getProducts().then((response) => {
-      if (category === "all-products") {
-        setProducts(response);
-      } else {
-        const categoryFilter = response.filter(
-          (res) => res.categoryRoute === category
-        );
-        setProducts(categoryFilter);
-      }
+      const categoryFiltered = categoryFilter(response, category);
+      setProducts(categoryFiltered);
     });
   }, [category]);
 

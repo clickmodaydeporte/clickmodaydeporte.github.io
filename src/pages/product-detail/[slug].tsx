@@ -5,6 +5,7 @@ import { IMG_URL } from "../../appConf";
 import MainImage from "../../components/product-detail/MainImage";
 import { Product } from "../../interfaces";
 import { getProducts } from "../../services/ProductService";
+import { productDetailFilter } from "../../utils/utils";
 
 const ProductDetail: NextPage = () => {
   const [productDetail, setProductDetail] = useState<Product>();
@@ -14,8 +15,8 @@ const ProductDetail: NextPage = () => {
 
   useEffect(() => {
     getProducts().then((response) => {
-      const prodDetail = response.filter((res) => res.slug === slug);
-      setProductDetail(prodDetail[0]);
+      const prodDetail = productDetailFilter(response, slug)
+      setProductDetail(prodDetail);
     });
   }, []);
 
