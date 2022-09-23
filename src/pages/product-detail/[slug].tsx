@@ -7,6 +7,7 @@ import { getProducts } from "../../services/ProductService";
 
 const ProductDetail: NextPage = () => {
   const [productDetail, setProductDetail] = useState<Product>();
+  const [activeImage, setActiveImage] = useState<string>("product-image1");
   const router = useRouter();
   const { slug } = router.query;
 
@@ -23,63 +24,68 @@ const ProductDetail: NextPage = () => {
         <div className="container">
           <div className="row">
             <div className="col-xl-6 col-lg-4">
-              <MainImage />
+              <MainImage activeImage={activeImage} />
               <div className="shop-thumb-tab mb-30">
                 <ul className="nav" id="myTab2" role="tablist">
-                  <li className="nav-item">
-                    <a
+                  <li
+                    className="nav-item"
+                    onClick={() => setActiveImage("product-image1")}>
+                    <div
                       className="nav-link active"
-                      id="home-tab"
+                      id="product-image1"
                       data-toggle="tab"
-                      href=""
                       role="tab"
                       aria-selected="true">
                       <img src="/images/click-banner-1.jpg" alt="" />
-                    </a>
+                    </div>
                   </li>
-                  <li className="nav-item">
-                    <a
+                  <li
+                    className="nav-item"
+                    onClick={() => setActiveImage("product-image2")}>
+                    <div
                       className="nav-link"
-                      id="profile-tab"
+                      id="product-image2"
                       data-toggle="tab"
-                      href=""
                       role="tab"
                       aria-selected="false">
                       <img src="/images/click-slider-1.jpg" alt="" />
-                    </a>
+                    </div>
                   </li>
-                  <li className="nav-item">
-                    <a
+                  <li
+                    className="nav-item"
+                    onClick={() => setActiveImage("product-image3")}>
+                    <div
                       className="nav-link"
-                      id="profile-tab2"
+                      id="product-image3"
                       data-toggle="tab"
-                      href=""
                       role="tab"
                       aria-selected="false">
                       <img src="/images/click-slider-2.jpg" alt="" />
-                    </a>
+                    </div>
                   </li>
-                  <li className="nav-item">
-                    <a
+                  <li
+                    className="nav-item"
+                    onClick={() => setActiveImage("product-image4")}>
+                    <div
                       className="nav-link"
-                      id="profile-tab2"
+                      id="product-image4"
                       data-toggle="tab"
-                      href=""
                       role="tab"
                       aria-selected="false">
                       <img src="/images/click-slider-2.jpg" alt="" />
-                    </a>
+                    </div>
                   </li>
-                  <li className="nav-item">
-                    <a
+                  <li
+                    className="nav-item"
+                    onClick={() => setActiveImage("product-image5")}>
+                    <div
                       className="nav-link"
-                      id="profile-tab2"
+                      id="product-image5"
                       data-toggle="tab"
-                      href=""
                       role="tab"
                       aria-selected="false">
                       <img src="/images/click-slider-2.jpg" alt="" />
-                    </a>
+                    </div>
                   </li>
                 </ul>
               </div>
