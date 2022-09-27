@@ -51,7 +51,7 @@ const ProductDetail: NextPage = () => {
                       data-toggle="tab"
                       role="tab"
                       aria-selected="true">
-                      <Image src={IMG_URL + productDetail?.imageID1} alt="" />
+                      <img src={IMG_URL + productDetail?.imageID1} alt="" />
                     </div>
                   </li>
                   {productDetail?.imageID2 !== "#N/A" && (
@@ -64,7 +64,7 @@ const ProductDetail: NextPage = () => {
                         data-toggle="tab"
                         role="tab"
                         aria-selected="false">
-                        <Image src={IMG_URL + productDetail?.imageID2} alt="" />
+                        <img src={IMG_URL + productDetail?.imageID2} alt="" />
                       </div>
                     </li>
                   )}
@@ -78,7 +78,7 @@ const ProductDetail: NextPage = () => {
                         data-toggle="tab"
                         role="tab"
                         aria-selected="false">
-                        <Image src={IMG_URL + productDetail?.imageID3} alt="" />
+                        <img src={IMG_URL + productDetail?.imageID3} alt="" />
                       </div>
                     </li>
                   )}
@@ -92,7 +92,7 @@ const ProductDetail: NextPage = () => {
                         data-toggle="tab"
                         role="tab"
                         aria-selected="false">
-                        <Image src={IMG_URL + productDetail?.imageID4} alt="" />
+                        <img src={IMG_URL + productDetail?.imageID4} alt="" />
                       </div>
                     </li>
                   )}
@@ -106,7 +106,7 @@ const ProductDetail: NextPage = () => {
                         data-toggle="tab"
                         role="tab"
                         aria-selected="false">
-                        <Image src={IMG_URL + productDetail?.imageID5} alt="" />
+                        <img src={IMG_URL + productDetail?.imageID5} alt="" />
                       </div>
                     </li>
                   )}

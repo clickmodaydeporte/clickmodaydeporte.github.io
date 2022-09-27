@@ -8,7 +8,7 @@ const LogoDesktop: React.FC<LogoDesktopProps> = ({ logo }) => {
     <div className="logo">
       <Link href="/">
         <a>
-          <Image
+          <img
             width={160}
             height={75}
             src={logo}

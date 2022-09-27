@@ -15,7 +15,7 @@ const MainFooter: React.FC = () => {
                 <div className="footer-logo">
                   <Link href="/">
                     <a>
-                      <Image src="/images/Click-logo.png" alt="" />
+                      <img src="/images/Click-logo.png" alt="" />
                     </a>
                   </Link>
                 </div>

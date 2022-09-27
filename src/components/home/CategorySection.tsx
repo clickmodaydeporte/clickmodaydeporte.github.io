@@ -14,7 +14,7 @@ const CategorySection = () => {
                   <div className="category-title">
                     <h3>Casual</h3>
                   </div>
-                  <Image
+                  <img
                     src="/images/categories/casual.jpg"
                     alt="Categoría casual de la tienda Click"
                   />
@@ -27,7 +27,7 @@ const CategorySection = () => {
                   <div className="category-title">
                     <h3>Accesorios</h3>
                   </div>
-                  <Image
+                  <img
                     src="/images/categories/accessories.png"
                     alt="Categoría accesorios de la tienda Click"
                   />
@@ -44,7 +44,7 @@ const CategorySection = () => {
                       <div className="category-title">
                         <h3>Deporte</h3>
                       </div>
-                      <Image
+                      <img
                         src="/images/categories/sport.jpg"
                         alt="Categoría deporte de la tienda Click"
                       />
@@ -61,7 +61,7 @@ const CategorySection = () => {
                   <div className="category-title">
                     <h3>Otros</h3>
                   </div>
-                  <Image
+                  <img
                     src="/images/categories/other-category.jpg"
                     alt="Categoría otros de la tienda Click"
                   />

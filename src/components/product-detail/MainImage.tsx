@@ -29,7 +29,7 @@ const MainImage: React.FC<props> = ({
           }`}
           role="tabpanel">
           <div className="product-large-img">
-            <Image src={IMG_URL + imageID1} alt={altImage1} />
+            <img src={IMG_URL + imageID1} alt={altImage1} />
           </div>
         </div>
         <div
@@ -39,7 +39,7 @@ const MainImage: React.FC<props> = ({
           id="profile"
           role="tabpanel">
           <div className="product-large-img">
-            <Image src={IMG_URL + imageID2} alt={altImage2} />
+            <img src={IMG_URL + imageID2} alt={altImage2} />
           </div>
         </div>
         <div
@@ -49,7 +49,7 @@ const MainImage: React.FC<props> = ({
           id="profile1"
           role="tabpanel">
           <div className="product-large-img">
-            <Image src={IMG_URL + imageID3} alt={altImage3} />
+            <img src={IMG_URL + imageID3} alt={altImage3} />
           </div>
         </div>
         <div
@@ -59,7 +59,7 @@ const MainImage: React.FC<props> = ({
           id="profile1"
           role="tabpanel">
           <div className="product-large-img">
-            <Image src={IMG_URL + imageID4} alt={altImage4} />
+            <img src={IMG_URL + imageID4} alt={altImage4} />
           </div>
         </div>
         <div
@@ -69,7 +69,7 @@ const MainImage: React.FC<props> = ({
           id="profile1"
           role="tabpanel">
           <div className="product-large-img">
-            <Image src={IMG_URL + imageID5} alt={altImage5} />
+            <img src={IMG_URL + imageID5} alt={altImage5} />
           </div>
         </div>
       </div>

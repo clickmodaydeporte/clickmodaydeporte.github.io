@@ -13,8 +13,8 @@ const ProductCard: React.FC<ProductCard> = ({ product }) => {
         <div className="product-wrapper mb-50">
           <div className="product-img mb-25">
             <a href="">
-              <Image src={hasImage ? IMG_URL + product.imageID1 : '/images/products/default-image.jpg'} />
-              <Image className="secondary-img" src={IMG_URL + product.imageID2} />
+              <img src={hasImage ? IMG_URL + product.imageID1 : '/images/products/default-image.jpg'} />
+              <img className="secondary-img" src={IMG_URL + product.imageID2} />
             </a>
             <div className="sale-tag">
               <span className="art">ART {product.art}</span>

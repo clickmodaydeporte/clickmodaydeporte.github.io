@@ -16,7 +16,7 @@ const SliderSection: React.FC = () => {
         // autoPlay
       >
         <div className="item">
-          <Image
+          <img
             src="/images/click-slider-3.jpg"
             // src="https://via.placeholder.com/1600x800"
             className="img-responsive"
@@ -49,7 +49,7 @@ const SliderSection: React.FC = () => {
           </div>
         </div>
         <div className="item">
-          <Image
+          <img
             src="/images/click-slider-4.jpg"
             className="img-responsive"
             alt="segunda imagen de portada de click Moda y Deporte"
@@ -78,7 +78,7 @@ const SliderSection: React.FC = () => {
           </div>
         </div>
         <div className="item">
-          <Image
+          <img
             src="/images/click-slider-2.jpg"
             className="img-responsive"
             alt=""
@@ -107,7 +107,7 @@ const SliderSection: React.FC = () => {
           </div>
         </div>
         <div className="item">
-          <Image
+          <img
             src="/images/click-slider-1.jpg"
             className="img-responsive"
             alt=""

@@ -16,7 +16,7 @@ const PopupMinicartProduct: React.FC<PopupMinicartProductProps> = ({
     <li>
       <div className="cart-img">
         <a href="">
-          <Image src={image} alt="" />
+          <img src={image} alt="" />
         </a>
       </div>
       <div className="cart-content">

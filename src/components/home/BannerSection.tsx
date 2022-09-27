@@ -9,7 +9,7 @@ const BannerSection: React.FC = () => {
           <div className="col-lg-6 col-md-12">
             <div className="banner-2 pos-relative mb-30">
               <a href="">
-                <Image
+                <img
                   src="/images/click-banner-2.jpg"
                   // src="https://via.placeholder.com/528x279"
                   alt=""
@@ -33,7 +33,7 @@ const BannerSection: React.FC = () => {
           <div className="col-lg-6 col-md-12">
             <div className="banner-2 pos-relative mb-30">
               <a href="">
-                <Image
+                <img
                   src="/images/click-banner-1.jpg"
                   alt=""
                 />
@@ -41,7 +41,7 @@ const BannerSection: React.FC = () => {
               <div className="banner-look">
                 <span>Get the look</span>
                 <h2>Festive Looks</h2>
-                <Image
+                <img
                   src="./Vue - Clean Minimal eCommerce HTML Template_files/look.png"
                   alt=""
                 />
