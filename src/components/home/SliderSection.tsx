@@ -12,8 +12,9 @@ const SliderSection: React.FC = () => {
         showIndicators={false}
         interval={6000}
         transitionTime={1000}
+        swipeable={false}
         infiniteLoop
-        // autoPlay
+        autoPlay
       >
         <div className="item">
           <img
