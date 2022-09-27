@@ -1,5 +1,5 @@
 import React from "react";
-import { IMG_URL } from "../../appConf";
+import { IMG_URL } from "../../utils/consts";
 import { ProductDetailImages } from "../../interfaces";
 
 interface props extends ProductDetailImages {

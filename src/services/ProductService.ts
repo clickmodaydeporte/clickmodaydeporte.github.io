@@ -1,4 +1,4 @@
-import { DASHBOARD_ID, GOOGLE_APIKEY } from "../appConf";
+import { config } from "../config/EnvConfig";
 import { Product } from "../interfaces";
 
 function convertToSlug(name: string): string {
@@ -49,7 +49,7 @@ function dataFilter(data: any): Product[] {
 }
 
 export async function getProducts(): Promise<Product[]> {
-  const url = `https://sheets.googleapis.com/v4/spreadsheets/${DASHBOARD_ID}/values/A1:V100/?alt=json&key=${GOOGLE_APIKEY}`;
+  const url = `https://sheets.googleapis.com/v4/spreadsheets/${config.dashboardId}/values/A1:V100/?alt=json&key=${config.googleApiKey}`;
 
   const response = await fetch(url)
     .then<any[]>((data) => data.json())
