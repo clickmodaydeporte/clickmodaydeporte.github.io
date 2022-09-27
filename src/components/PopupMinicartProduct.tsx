@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 interface PopupMinicartProductProps {
@@ -15,7 +16,7 @@ const PopupMinicartProduct: React.FC<PopupMinicartProductProps> = ({
     <li>
       <div className="cart-img">
         <a href="">
-          <img src={image} alt="" />
+          <Image src={image} alt="" />
         </a>
       </div>
       <div className="cart-content">

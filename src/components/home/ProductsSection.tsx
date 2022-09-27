@@ -20,8 +20,8 @@ const ProductsSection: React.FC<Product[]> = (newProducts) => {
           <div id="products_container" className="row">
             {products.map((product) => {
               return (
-                <div className="product-card_container col-lg-3 col-md-5">
-                  <ProductCard key={product.art} product={product} />
+                <div key={product.art} className="product-card_container col-lg-3 col-md-5">
+                  <ProductCard product={product} />
                 </div>
               );
             })}

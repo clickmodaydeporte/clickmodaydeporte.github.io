@@ -1,4 +1,5 @@
 import { NextPage } from "next";
+import Image from "next/image";
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 import { IMG_URL } from "../../appConf";
@@ -18,7 +19,7 @@ const ProductDetail: NextPage = () => {
       const prodDetail = productDetailFilter(response, slug)
       setProductDetail(prodDetail);
     });
-  }, []);
+  }, [slug]);
 
   return (
     <main>
@@ -50,7 +51,7 @@ const ProductDetail: NextPage = () => {
                       data-toggle="tab"
                       role="tab"
                       aria-selected="true">
-                      <img src={IMG_URL + productDetail?.imageID1} alt="" />
+                      <Image src={IMG_URL + productDetail?.imageID1} alt="" />
                     </div>
                   </li>
                   {productDetail?.imageID2 !== "#N/A" && (
@@ -63,7 +64,7 @@ const ProductDetail: NextPage = () => {
                         data-toggle="tab"
                         role="tab"
                         aria-selected="false">
-                        <img src={IMG_URL + productDetail?.imageID2} alt="" />
+                        <Image src={IMG_URL + productDetail?.imageID2} alt="" />
                       </div>
                     </li>
                   )}
@@ -77,7 +78,7 @@ const ProductDetail: NextPage = () => {
                         data-toggle="tab"
                         role="tab"
                         aria-selected="false">
-                        <img src={IMG_URL + productDetail?.imageID3} alt="" />
+                        <Image src={IMG_URL + productDetail?.imageID3} alt="" />
                       </div>
                     </li>
                   )}
@@ -91,7 +92,7 @@ const ProductDetail: NextPage = () => {
                         data-toggle="tab"
                         role="tab"
                         aria-selected="false">
-                        <img src={IMG_URL + productDetail?.imageID4} alt="" />
+                        <Image src={IMG_URL + productDetail?.imageID4} alt="" />
                       </div>
                     </li>
                   )}
@@ -105,7 +106,7 @@ const ProductDetail: NextPage = () => {
                         data-toggle="tab"
                         role="tab"
                         aria-selected="false">
-                        <img src={IMG_URL + productDetail?.imageID5} alt="" />
+                        <Image src={IMG_URL + productDetail?.imageID5} alt="" />
                       </div>
                     </li>
                   )}

@@ -29,7 +29,7 @@ const Contact: NextPage = () => {
                   <a
                     className="anchor"
                     href="https://www.instagram.com/clickmodaydeporte"
-                    target="_blank">
+                    target="_blank" rel="noreferrer">
                     @clickmodaydeporte
                   </a>
                 </p>
@@ -45,7 +45,7 @@ const Contact: NextPage = () => {
                   <a
                     className="anchor"
                     href="https://api.whatsapp.com/send?phone=5491170337845"
-                    target="_blank">
+                    target="_blank" rel="noreferrer">
                     +549 11 7033 7845
                   </a>
                 </p>
@@ -53,7 +53,7 @@ const Contact: NextPage = () => {
                   <a
                     className="anchor"
                     href="https://api.whatsapp.com/send?phone=5491130422946"
-                    target="_blank">
+                    target="_blank" rel="noreferrer">
                     +549 11 3042 2946
                   </a>
                 </p>
@@ -69,7 +69,7 @@ const Contact: NextPage = () => {
                   <a
                     className="anchor"
                     href="https://www.facebook.com/ClickModayDeporte"
-                    target="_blank">
+                    target="_blank" rel="noreferrer">
                     Click Moda y Deporte
                   </a>
                 </p>

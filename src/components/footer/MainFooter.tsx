@@ -1,5 +1,6 @@
 import { faFacebookF, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -12,9 +13,11 @@ const MainFooter: React.FC = () => {
             <div className="col-xl-3 col-lg-5 col-md-6 ">
               <div className="footer-widget mb-40 footer-logo_container">
                 <div className="footer-logo">
-                  <a href="/">
-                    <img src="/images/Click-logo.png" alt="" />
-                  </a>
+                  <Link href="/">
+                    <a>
+                      <Image src="/images/Click-logo.png" alt="" />
+                    </a>
+                  </Link>
                 </div>
               </div>
             </div>
