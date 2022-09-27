@@ -1,17 +1,10 @@
 import Link from "next/link";
-import { useRouter } from "next/router";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
 const MenuMobile: React.FC = () => {
   const [openMenu, setOpenMenu] = useState<boolean>(false);
   const [openSubmenuProducts, setOpenSubmenuProducts] =
     useState<boolean>(false);
-  const router = useRouter();
-  const { pathname } = router;
-
-  useEffect(() => {
-    handleOpenMenu();
-  }, [pathname]);
 
   const handleOpenMenu = () => {
     setOpenMenu(!openMenu);
