@@ -1950,6 +1950,17 @@ a.meanmenu-reveal {
     font-size: 40px;
   }
 
+  .slide-content {
+    & span.cover {
+      margin-left: 0 !important;
+    }
+  }
+
+  .slide-content.pt-120,
+  .slide-content.pt-200 {
+    padding-top: 0px;
+  }
+
   .slide-btn a {
     margin-bottom: 10px;
   }
