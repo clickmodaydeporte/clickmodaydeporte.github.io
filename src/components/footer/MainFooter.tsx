@@ -1,6 +1,5 @@
 import { faFacebookF, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -26,7 +25,7 @@ const MainFooter: React.FC = () => {
                 <h3>Click</h3>
                 <ul className="footer-link">
                   <li>
-                    <Link href="/product-list">
+                    <Link href="/product-list/all-products">
                       <a>Nuestros Productos</a>
                     </Link>
                   </li>

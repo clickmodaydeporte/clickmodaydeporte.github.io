@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 import { IMG_URL } from "../../appConf";
 import { ProductDetailImages } from "../../interfaces";
