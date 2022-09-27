@@ -37,6 +37,14 @@ jobs:
           files: "package.json"
         env:
           homepage: "https://clickmodaydeporte.com"
+          
+      - uses: microsoft/variable-substitution@v1
+        with:
+          files: "src/config/env.json"
+        env:
+          dashboardId: "1KExP9qeRSjiVH4EpqHMi50dHcBA-s2WZbq0djt5ZnMU"
+          googleApiKey: "AIzaSyB8xf0h5fXR2wmHt0lASaNXOcxzxaDvLBA"
+          
 
       - name: Build
         env:
