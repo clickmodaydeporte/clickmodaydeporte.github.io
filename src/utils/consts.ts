@@ -1,0 +1,1 @@
+export const IMG_URL = "https://drive.google.com/uc?export=view&id=";

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import { IMG_URL } from "../appConf";
+import { IMG_URL } from "../utils/consts";
 import { ProductCard } from "../interfaces";
 
 const ProductCard: React.FC<ProductCard> = ({ product }) => {

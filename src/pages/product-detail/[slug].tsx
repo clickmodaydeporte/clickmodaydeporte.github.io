@@ -1,7 +1,7 @@
 import { NextPage } from "next";
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
-import { IMG_URL } from "../../appConf";
+import { IMG_URL } from "../../utils/consts";
 import MainImage from "../../components/product-detail/MainImage";
 import { Product } from "../../interfaces";
 import { getProducts } from "../../services/ProductService";
@@ -15,7 +15,7 @@ const ProductDetail: NextPage = () => {
 
   useEffect(() => {
     getProducts().then((response) => {
-      const prodDetail = productDetailFilter(response, slug)
+      const prodDetail = productDetailFilter(response, slug);
       setProductDetail(prodDetail);
     });
   }, [slug]);
@@ -120,9 +120,11 @@ const ProductDetail: NextPage = () => {
                 <h2 className="pro-details-title mb-15">
                   {productDetail?.name}
                 </h2>
-                <div className="details-price mb-20">
-                  <span>{productDetail?.price}</span>
-                </div>
+                {productDetail?.stock && (
+                  <div className="details-price mb-20">
+                    <span>{productDetail?.price}</span>
+                  </div>
+                )}
                 <div className="product-variant">
                   <div className="product-info-list variant-item">
                     <ul>
@@ -141,7 +143,10 @@ const ProductDetail: NextPage = () => {
                     </ul>
                   </div>
                   <div className="payment-methods_container">
-                    <p>Medios de pago: efectivo, MercadoPago o Transferencia bancaria.</p>
+                    <p>
+                      Medios de pago: efectivo, MercadoPago o Transferencia
+                      bancaria.
+                    </p>
                   </div>
                 </div>
               </div>
