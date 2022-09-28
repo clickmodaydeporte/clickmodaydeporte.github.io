@@ -5,14 +5,20 @@ import { ProductCard } from "../interfaces";
 
 const ProductCard: React.FC<ProductCard> = ({ product }) => {
   const hasImage = product.imageID1;
-  
+
   return (
     <Link href={`/product-detail/${product.slug}`}>
       <a className="product-card-anchor">
         <div className="product-wrapper mb-50">
           <div className="product-img mb-25">
             <a href="">
-              <img src={hasImage ? IMG_URL + product.imageID1 : '/images/products/default-image.jpg'} />
+              <img
+                src={
+                  hasImage
+                    ? IMG_URL + product.imageID1
+                    : "/images/products/default-image.jpg"
+                }
+              />
               <img className="secondary-img" src={IMG_URL + product.imageID2} />
             </a>
             <div className="sale-tag">
@@ -27,9 +33,11 @@ const ProductCard: React.FC<ProductCard> = ({ product }) => {
               <a href="">{product.name}</a>
             </h4>
             <div className="product-meta">
-              <div className="pro-price">
-                <span>{product.price}</span>
-              </div>
+              {product.stock && (
+                <div className="pro-price">
+                  <span>{product.price}</span>
+                </div>
+              )}
             </div>
           </div>
         </div>
